@@ -9,24 +9,44 @@
     </head>
     <body>
         <div class="form">
-            <h1>Feedback Form</h1>
+            <h1>Give a feedback</h1>
             <form id="feedbackForm" name="feedbackForm">
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name">
-                <input type="text" id="Last name" name="lastname">
-                <br>
-                <label for="email">Email Address</label><br>
+                <p>
+                <label for="firstname">Enter your Name:</label><br>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" autocomplete="on" required autofocus>
+                <input type="text" id="Lastname" name="Lastname" placeholder="Last Name" autocomplete="on" required>
+                </p>
+                <p>
+                <label for="email">Enter your Email Address:</label><br>
                 <input type="email" id="email" name="email">
-                <br>
-                <label for="yes">
-                    <h3>Was this your first visit?</h3>
-                    <input type="radio" id="yes" name="first_time_visit" value="Yes" />
-                    Yes
-                </label>
-                <label for="no">
-                    <input type="radio" id="no" name="first_time_visit" value="No" />
-                    No
-                </label>
+                </p>
+                <p>
+                <label for="teleNo">Enter your Telephone No:</label><br>
+                <input type="tel" id="teleNo" name="teleNo">
+                </p>
+                <p>
+                <label for="yes">Was this website informative and easy to navigate thought</label><br>
+                <input type="radio" id="yes" name="Informative_easy" value="Yes" >
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="Informative_easy" value="No" >
+                <label for="no">No</label>              
+                </p>
+                <p>
+                <label for="suggest">If "No" Suggest any improvement for future</label><br>
+                <textarea name="suggest" id="suggest" rows="3" placeholder="Add your message here..."></textarea>
+                </p>
+                <p>
+                <label for="update">Would you liike to recieve updates about the website and any offers?</label><br>
+                <select name="update" id="update">
+                    <option value="yes-email">Yes- via Email</option>
+                    <option value="yes-tele">Yes- via Tele.Number</option>
+                    <option value="No">No</option>
+                </select>
+                </p>
+                <p>
+                <label for="comment">Do you have any additional questions or request?</label><br>
+                <textarea name="comment" id="comment" rows="4" placeholder="Add your message here...."></textarea>
+                </p>
             </form>
 
         </div>
