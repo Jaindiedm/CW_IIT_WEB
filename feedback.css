@@ -1,0 +1,33 @@
+body {
+    background: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.form {
+    background-color: rgb(221, 254, 254);
+    background-size: cover;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    color: black;
+    cursor: pointer;
+}
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+
