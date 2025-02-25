@@ -10,7 +10,9 @@ body {
 }
 .form {
     background-color: rgb(221, 254, 254);
-    background-size: cover;
+    background-size: contain;
+    border-radius: 20px;
+    
 }
 .rating {
     display: flex;
