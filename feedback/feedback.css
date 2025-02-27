@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 600px;
+}
+h1 {
+    color: #333;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 10px;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+}
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+button {
+    background: #4facfe;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+button:hover {
+    background: #00c6ff;
+}
+p input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+p input[type="radio"], p label {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
