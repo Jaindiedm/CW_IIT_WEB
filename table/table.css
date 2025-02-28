@@ -59,6 +59,14 @@ background-color: #3a3d3a;
     display: table-row; /* Show the row when targeted */
 }
 
+.description-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
 
 
 
