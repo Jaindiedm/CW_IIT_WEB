@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Page</title>
+    <link rel="stylesheet" href="profile-styles.css">
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay loop muted playsinline >
+            <source src="8191185-uhd_4096_2160_30fps.mp4" type="video/mp4">
+
+        </video>
+    </div>
+
+    <div class="container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <!-- Profile Card -->
+            <div class="card profile-section">
+                <img src="image1.jpg" alt="Profile Picture" class="profile-picture">
+                <h1 class="profile-name">Sofie Meena</h1>
+                <p class="profile-title">Environmental Activist & Community Organizer</p>
+            </div>
+            
+            <!-- Skills Card -->
+            <div class="card skills-section">
+                <h3>Skills</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Public Speaking</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Project Management</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Community Outreach</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Goals Card -->
+            <div class="card goals-section">
+                <h3>Goals</h3>
+                <div class="goal-item">
+                    <div class="skill-name">
+                        <span>Beach Clean-ups (2025)</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 40%; background-color: var(--secondary-color);"></div>
+                    </div>
+                </div>
+                
+                <div class="goal-item">
+                    <div class="skill-name">
+                        <span>Tree Planting Initiative</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%; background-color: var(--secondary-color);"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Card -->
+            <div class="card contact-section">
+                <h3>Contact Me</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Right Column -->
+        <div class="right-column">
+            <!-- Introduction Card -->
+            <div class="card">
+                <h2 style="color: rgb(53, 75, 38);">About Me</h2>
+                <p class="intro-text">
+                    Passionate environmental activist with over 8 years of experience organizing community-driven sustainability projects. I believe in the power of collective action to create meaningful change. My work focuses on coastal conservation, urban tree planting, and educating communities about sustainable practices that benefit our planet.
+                </p>
+            </div>
+            
+            <!-- Volunteering Card -->
+            <div class="card volunteering-section">
+                <h3>UN Goals I Support</h3>
+                <div class="icon-list">
+                    <div class="icon-item">
+                        <div class="icon" title="Clean Water and Sanitation">💧</div>
+                        <span>Clean Water</span>
+                    </div>
+                    
+                    <div class="icon-item">
+                        <div class="icon" title="Climate Action">🌡️</div>
+                        <span>Climate Action</span>
+                    </div>
+                    
+                    <div class="icon-item">
+                        <div class="icon" title="Life Below Water">🐙</div>
+                        <span>Life Below Water</span>
+                    </div>
+                    
+                    <div class="icon-item">
+                        <div class="icon" title="Life On Land">🌳</div>
+                        <span>Life On Land</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interests Card -->
+            <div class="card interests-section">
+                <h3>Volunteer Activities</h3>
+                <div class="icon-list">
+                    <div class="icon-item">
+                        <div class="icon" title="Beach Clean-ups">🏖️</div>
+                        <span>Beach Clean-ups</span>
+                    </div>
+                    
+                    <div class="icon-item">
+                        <div class="icon" title="Tree Planting">🌱</div>
+                        <span>Tree Planting</span>
+                    </div>
+                    
+                    <div class="icon-item">
+                        <div class="icon" title="Wildlife Conservation">🦊</div>
+                        <span>Wildlife Conservation</span>
+                    </div>
+                    
+                    <div class="icon-item">
+                        <div class="icon" title="Education Workshops">📚</div>
+                        <span>Education Workshops</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Calendar Card -->
+            <div class="card calendar-section">
+                <h3>Availability Calendar</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9 AM - 12 PM</td>
+                            <td>Available</td>
+                            <td>Meetings</td>
+                            <td>Available</td>
+                            <td>Workshops</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>1 PM - 5 PM</td>
+                            <td>Field Work</td>
+                            <td>Available</td>
+                            <td>Field Work</td>
+                            <td>Available</td>
+                            <td>Community Events</td>
+                        </tr>
+                        <tr>
+                            <td>Evenings</td>
+                            <td>Unavailable</td>
+                            <td>Available</td>
+                            <td>Unavailable</td>
+                            <td>Available</td>
+                            <td>Unavailable</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p><a href="editor.html">4-Page Editor</a></p>
+    </footer>
+</body>
+</html>
