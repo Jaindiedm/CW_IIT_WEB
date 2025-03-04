@@ -7,10 +7,10 @@ body {
 }
 
 h1 {
-    color: #431f03;
+    color: #132404;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 20px;
-    background-color: #bd641f;
+    background-color: #85a869;
     border-radius: 12px;
     
 }
@@ -23,8 +23,8 @@ svg {
 }
 
 .node {
-    fill: #edb070;
-    stroke: #e19120;
+    fill: #374e32;
+    stroke: #cbe5bf;
     
     stroke-width: 4;
     cursor: pointer;
@@ -32,19 +32,19 @@ svg {
 }
 
 .node:hover, .node:focus {
-    fill: #e77a47; /* Changes color on hover */
+    fill: #85a869; /* Changes color on hover */
 }
 
 text {
     font-size: auto;
-    fill: rgb(132, 69, 7);
+    fill: #06f465b3;
     font-weight: bold;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     pointer-events: none;
 }
 
 .link {
-    stroke: #f4955a;
+    stroke: #cbe5bf;
     stroke-width: 4;
 }
 
