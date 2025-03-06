@@ -4,206 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
-    <style>
-        :root {
-            --primary-color: #2ecc71;
-            --secondary-color: #27ae60;
-            --accent-color: #e0f2f1;
-            --text-color: #333;
-            --light-gray: #f5f5f5;
-            --border-color: #ddd;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(135deg, #e0f7fa, #b2dfdb);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .container {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 100%;
-            max-width: 900px;
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .form-image {
-            background: url('/api/placeholder/400/600') center/cover;
-            width: 40%;
-            position: relative;
-        }
-        
-        .form-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(46, 204, 113, 0.7);
-        }
-        
-        .form-image-content {
-            position: absolute;
-            bottom: 40px;
-            left: 30px;
-            color: white;
-            z-index: 1;
-        }
-        
-        .form-image-content h2 {
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-        
-        .form-content {
-            padding: 40px;
-            width: 60%;
-        }
-        
-        .form-header {
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        .form-header h1 {
-            color: var(--primary-color);
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-        
-        .form-row {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-        
-        .form-group {
-            flex: 1;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--text-color);
-            font-size: 14px;
-        }
-        
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            font-size: 14px;
-            transition: all 0.3s;
-        }
-        
-        input:focus,
-        select:focus,
-        textarea:focus {
-            border-color: var(--primary-color);
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.2);
-        }
-        
-        textarea {
-            resize: none;
-            min-height: 100px;
-        }
-        
-        .radio-group {
-            display: flex;
-            gap: 20px;
-        }
-        
-        .radio-item {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        
-        .radio-item input[type="radio"] {
-            width: auto;
-            margin-right: 8px;
-            cursor: pointer;
-        }
-        
-        .rating {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: flex-start;
-        }
-        
-        .rating input {
-            display: none;
-        }
-        
-        .rating label {
-            font-size: 24px;
-            color: #ccc;
-            cursor: pointer;
-            margin: 0 2px;
-        }
-        
-        .rating input:checked ~ label,
-        .rating label:hover,
-        .rating label:hover ~ label {
-            color: var(--primary-color);
-        }
-        
-        button {
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 14px;
-            border-radius: 6px;
-            font-weight: 600;
-            width: 100%;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        
-        button:hover {
-            background: var(--secondary-color);
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            
-            .form-image,
-            .form-content {
-                width: 100%;
-            }
-            
-            .form-image {
-                height: 200px;
-            }
-            
-            .form-row {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="feedback.css">
+    
 </head>
 <body>
     <div class="container">
@@ -214,86 +16,117 @@
             </div>
         </div>
         <div class="form-content">
-            <div class="form-header">
-                <h1>Share Your Thoughts</h1>
-                <p>We'd love to hear what you think about our website</p>
+            <!-- Form Section -->
+            <div id="formSection">
+                <div class="form-header">
+                    <h1>Share Your Thoughts</h1>
+                    <p>We'd love to hear what you think about our website</p>
+                </div>
+                
+                <form id="feedbackForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname" required autofocus>
+                            <div class="error" id="firstname-error">Please enter your first name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                            <div class="error" id="lastname-error">Please enter your last name</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error" id="email-error">Please enter a valid email address</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="teleNo">Phone Number</label>
+                            <input type="tel" id="teleNo" name="teleNo" required>
+                            <div class="error" id="teleNo-error">Please enter your phone number</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label>Was this website informative and easy to navigate?</label>
+                        <div class="radio-group">
+                            <label class="radio-item">
+                                <input type="radio" id="yes" name="Informative_easy" value="Yes" required>
+                                Yes
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" id="no" name="Informative_easy" value="No">
+                                No
+                            </label>
+                        </div>
+                        <div class="error" id="Informative_easy-error">Please select an option</div>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="suggest">If "No", please suggest improvements</label>
+                        <textarea name="suggest" id="suggest" placeholder="Your suggestions..."></textarea>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="update">Would you like to receive updates?</label>
+                        <select name="update" id="update">
+                            <option value="yes-email">Yes - via Email</option>
+                            <option value="yes-tele">Yes - via Phone</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="comment">Additional questions or requests</label>
+                        <textarea name="comment" id="comment" placeholder="Tell us more..."></textarea>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 30px;">
+                        <label>Rate your experience</label>
+                        <div class="rating">
+                            <input type="radio" name="star" id="star5" value="5" required>
+                            <label for="star5">★</label>
+                            <input type="radio" name="star" id="star4" value="4">
+                            <label for="star4">★</label>
+                            <input type="radio" name="star" id="star3" value="3">
+                            <label for="star3">★</label>
+                            <input type="radio" name="star" id="star2" value="2">
+                            <label for="star2">★</label>
+                            <input type="radio" name="star" id="star1" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                        <div class="error" id="star-error">Please rate your experience</div>
+                    </div>
+                    
+                    <button type="submit" id="submitBtn">Submit Feedback</button>
+                    <div class="form-error-message" id="form-error-message">Please fill out all required fields</div>
+                </form>
             </div>
             
-            <form id="feedbackForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="firstname" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" id="lastname" name="lastname" required>
-                    </div>
+            <!-- Preview Section -->
+            <div id="formPreview">
+                <h2>Review Your Feedback</h2>
+                <div id="previewContent">
+                    <!-- Preview content will be populated by JavaScript -->
                 </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="teleNo">Phone Number</label>
-                        <input type="tel" id="teleNo" name="teleNo">
-                    </div>
+                <div class="button-group">
+                    <button id="editButton">Edit Response</button>
+                    <button id="finalSubmitButton">Submit Final</button>
                 </div>
-                
-                <div class="form-group" style="margin-bottom: 20px;">
-                    <label>Was this website informative and easy to navigate?</label>
-                    <div class="radio-group">
-                        <label class="radio-item">
-                            <input type="radio" id="yes" name="Informative_easy" value="Yes">
-                            Yes
-                        </label>
-                        <label class="radio-item">
-                            <input type="radio" id="no" name="Informative_easy" value="No">
-                            No
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group" style="margin-bottom: 20px;">
-                    <label for="suggest">If "No", please suggest improvements</label>
-                    <textarea name="suggest" id="suggest" placeholder="Your suggestions..."></textarea>
-                </div>
-                
-                <div class="form-group" style="margin-bottom: 20px;">
-                    <label for="update">Would you like to receive updates?</label>
-                    <select name="update" id="update">
-                        <option value="yes-email">Yes - via Email</option>
-                        <option value="yes-tele">Yes - via Phone</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
-                
-                <div class="form-group" style="margin-bottom: 20px;">
-                    <label for="comment">Additional questions or requests</label>
-                    <textarea name="comment" id="comment" placeholder="Tell us more..."></textarea>
-                </div>
-                
-                <div class="form-group" style="margin-bottom: 30px;">
-                    <label>Rate your experience</label>
-                    <div class="rating">
-                        <input type="radio" name="star" id="star5" value="5">
-                        <label for="star5">★</label>
-                        <input type="radio" name="star" id="star4" value="4">
-                        <label for="star4">★</label>
-                        <input type="radio" name="star" id="star3" value="3">
-                        <label for="star3">★</label>
-                        <input type="radio" name="star" id="star2" value="2">
-                        <label for="star2">★</label>
-                        <input type="radio" name="star" id="star1" value="1">
-                        <label for="star1">★</label>
-                    </div>
-                </div>
-                
-                <button type="submit">Submit Feedback</button>
-            </form>
+            </div>
+            
+            <!-- Thank You Message -->
+            <div id="thankYouMessage">
+                <div class="thank-you-icon">✓</div>
+                <h2>Thank You for Your Feedback!</h2>
+                <p>We appreciate your time and thoughts. Your feedback helps us improve our services.</p>
+            </div>
         </div>
     </div>
+
+    <script src="feedback.js"></script>
 </body>
 </html>
