@@ -40,13 +40,13 @@ body {
     text-align: center;
     transition: all 0.4s ease;
     overflow: hidden;
-    height: 340px;
+    height: 300px;
 }
 
 .member:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-    height: 400px;
+    height: 480px;
 }
 
 .member-image {
@@ -55,7 +55,7 @@ body {
     margin: 0 auto 15px;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid #f0f0f0;
+    border: 3px solid #f0f0f0;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: all 0.4s ease;
 }
@@ -100,21 +100,21 @@ body {
 
 .member:hover .details {
     opacity: 1;
-    max-height: 150px;
+    max-height: 180px;
 }
 
 .details p {
-    margin-bottom: 15px;
-    font-size: 0.9rem;
-    line-height: 1.5;
+    margin-bottom: 10px; /* Reduce from 15px */
+    font-size: 0.85rem; /* Slightly smaller text */
+    line-height: 1.4; /* Slightly tighter line height */
     color: #555;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 15px;
+    margin-top: 10px; /* Reduce from 15px */
+    gap: 10px; /* Reduce from 15px */
 }
 
 .social-icon {

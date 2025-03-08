@@ -182,3 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+document.getElementById('finalSubmitButton').addEventListener('click', function() {
+    document.getElementById('thankYouMessage').style.display = 'block';
+    document.querySelector('.footer').classList.add('thank-you-footer');
+});
