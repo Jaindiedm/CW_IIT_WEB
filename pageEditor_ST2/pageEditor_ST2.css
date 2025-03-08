@@ -1,13 +1,17 @@
 /* editor-styles.css */
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
+.container1 {
+    max-width: auto;
+    margin: auto auto;
+    top: 100;
+    align-content: center;
+    
+    width: 700px;
     padding: 20px;
     background-color: rgb(179, 205, 180);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     min-height: 100vh;
-    color: var(--neutral-dark);
+    color: var(--neutral-dark)
 }
 
 /* Header styles */
@@ -20,12 +24,12 @@
 }
 
 /* Typography */
-.container h1 {
+.container1 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.container h2 {
+.container1 h2 {
     font-size: 1.8rem;
     margin: 25px 0 15px 0;
     color: #1a3623;
@@ -33,33 +37,33 @@
     padding-bottom: 8px;
 }
 
-.container h3 {
+.container1 h3 {
     font-size: 1.4rem;
     margin: 20px 0 10px 0;
     color: #234826;
 }
 
-p {
+.container1 p {
     margin-bottom: 15px;
 }
 
-.container ul , ol {
+.container1 ul , ol {
     margin-bottom: 20px;
     padding-left: 25px;
 }
 
-.container li {
+.container1 li {
     margin-bottom: 8px;
 }*/
 
 /* Link styles */
-.container a {
+.container1 a {
     color: #819a04;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.container a:hover {
+.container1 a:hover {
     color: #41510e;
     text-decoration: underline;
 }
@@ -72,6 +76,7 @@ p {
     background-color: #f2f7f9;
     padding: 20px;
     border-radius: 8px;
+    
 }
 
 .profile-image {
@@ -103,10 +108,11 @@ p {
 /* Page sections */
 .page-section {
     background-color: #fbfaf4;
-    padding: 20px;
+    padding: 50px;
     border-radius: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     border-left: 4px solid #566b23;
+    
 }
 
 .tech-details {
@@ -142,22 +148,59 @@ code {
 /* References section */
 .reference-list {
     margin-top: 30px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #cad716;
     padding-top: 20px;
 }
 
-/* Primary Navigation */
-.primary-nav {
-    background-color: #228346;
-    padding: 10px 0;
-    margin-bottom: 20px;
+.sidebar{
+    width: 250px;
+    background-color:#228346;
+    padding: 35px;
+    position:fixed;
+    overflow-y: auto;
+    
+    left: 0;
+    top: 110px;
+    bottom: 0;
+    border-right: 2px solid #d9ee60;
+    
 }
 
+.sidebar h2{
+    font-size:20px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1c2d1c;
+    
+
+
+}
+.sidebar ul{
+    
+    padding: 0;
+    color: #183420;
+    
+}
+.sidebar ul li{
+    margin-bottom: 10px;
+
+
+}
+.sidebar ul li a{
+    text-decoration:#1a3623;
+    color: #bef105;
+
+}
+.sidebar ul li a:hover{
+    text-decoration: underline;
+    color: #1a3623;
+}
 .primary-nav ul {
-    list-style: none;
+    
     padding: 0;
     margin: 0;
     display: flex;
+
     justify-content: center;
 }
 
@@ -201,7 +244,7 @@ code {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 650px) {
     .profile-section {
         flex-direction: column;
         text-align: center;
@@ -220,5 +263,5 @@ code {
     nav li {
         margin: 5px 0;
     }
+    
 }
-
