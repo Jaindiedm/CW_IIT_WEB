@@ -10,6 +10,38 @@
             type="image/png">
         <link rel="stylesheet" href="../footer.css">
         <link rel="stylesheet" href="../navbar.css">
+        <script>
+            /* JavaScript functionality for go-to-top button */
+document.addEventListener('DOMContentLoaded', function() {
+  const goTopBtn = document.getElementById('go-to-top');
+  
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      goTopBtn.classList.add('visible');
+    } else {
+      goTopBtn.classList.remove('visible');
+    }
+  });
+  
+  // Add animation to sections when they come into view
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-content');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.1,
+    rootMargin: '0px'
+  });
+  
+  document.querySelectorAll('.transparent-box, .how-to-help, .efforts, .importance').forEach(section => {
+    observer.observe(section);
+  });
+});
+        </script>
     </head>
     <body>
         <!-- Header with Navigation -->
@@ -24,7 +56,7 @@
                     <li><a href="home.html">Home ≫</a></li>
                     <li><a href="volunteer.html">Volunteer ≫</a></li>
                     <li><a href="table.html">Data ≫</a></li>
-                    <li><a href="feedback.html">Feedback ≫</a></li>
+                    <li><a href="../feedback/feedback.html">Feedback ≫</a></li>
                     <li><a href="profile.html">Profile ≫</a></li>
                     <li><a href="sitemap.html">Sitemap ≫</a></li>
                     <li><a href="team.html">Team ≫</a></li>
@@ -38,130 +70,124 @@
                 <div class="sub-topics">
                     <nav class="side-nav">
                         <ul>
-                            <li><a href="#box1">Protected Areas & National
-                                    Parks</a></li>
-                            <li><a href="#box2">Anti-Poaching Efforts & Wildlife
-                                    Law Enforcement</a></li>
-                            <li><a href="#box3">Habitat Restoration &
-                                    Reforestation</a></li>
-                            <li><a href="#box4">Community-Based Conservation &
-                                    Ecotourism</a></li>
+                            <li><a href="#box1">Sustainable Land Management
+                                    (SLM)</a></li>
+                            <li><a href="#box2">Reforestation and
+                                    Afforestation</a></li>
+                            <li><a href="#box3">Water Management
+                                    Techniques</a></li>
+                            <li><a href="#box4">Soil Conservation
+                                    Practices</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
 
             <div class="efforts">
-                <h1>Wildlife Conservation Efforts</h1>
+                <h1>Combatting Desertification: Restoring Degraded Lands and
+                    Preventing Soil Erosion</h1>
                 <p class="description">
-                    Wildlife conservation is crucial for maintaining
-                    biodiversity and ensuring the survival of endangered
-                    species.
-                    This page highlights key initiatives and strategies aimed at
-                    protecting wildlife around the globe.
+                    Desertification is a growing environmental crisis that
+                    threatens the livelihoods of millions of people worldwide.
+                    It occurs when fertile land transforms into arid desert due
+                    to factors like deforestation, unsustainable farming,
+                    overgrazing, and climate change. The good news is that
+                    desertification can be reversed through effective strategies
+                    and sustainable practices. This page explores actionable
+                    solutions to restore degraded lands, prevent soil erosion,
+                    and build a resilient future.
                 </p>
             </div>
 
             <!-- Section: Importance of Wildlife Conservation -->
-            <section class="importance">
-                <h2>Why is Wildlife Conservation Important?</h2>
+            <section class="importance" style="text-align: left; padding:20px;">
+                <h2>What is Desertification?</h2>
                 <p class="description">
-                    Wildlife conservation helps to protect the natural habitats
-                    of various species, ensuring ecological balance.
-                    It also supports the livelihoods of communities that depend
-                    on these ecosystems for their survival.
+                    Desertification is the process by which fertile land becomes
+                    desert, often due to human activities and climatic changes.
+                    It leads to:
+                </p>
+                <div style="padding-left: 50px;">
+                    <ul>
+                        <li>Loss of arable land</li>
+                        <li>Reduced biodiversity</li>
+                        <li>Increased soil erosion</li>
+                        <li>Water scarcity</li>
+                        <li>Food insecurity</li>
+                    </ul>
+
+                </div>
+                <p class="description">
+                    Over 2 billion people worldwide are affected by
+                    desertification, making it a critical global issue. However,
+                    with the right strategies, we can restore degraded lands and
+                    protect our planet.
                 </p>
             </section>
 
             <!-- Section: Key Initiatives -->
             <section class="initiatives">
-                <h2>Key Conservation Initiatives</h2>
+                <h2>Key Strategies to Combat Desertification</h2>
                 <div class="transparent-box" id="box1">
                     <img
-                        src="../images/vecteezy_hot-springs-onsen-natural-bath-at-national-park-chae-son_8938010.jpg"
+                        src="./images/1.webp"
                         alt="box1" class="img-box">
                     <div class="text-box">
-                        <h1>Protected Areas & National Parks</h1>
+                        <h1>Sustainable Land Management</h1>
                         <hr>
                         <h3>
-                            "Governments and conservation organizations
-                            establish protected areas,
-                            such as national parks and wildlife reserves, to
-                            safeguard habitats and
-                            biodiversity. These areas provide a safe haven for
-                            endangered species,
-                            regulate human activities, and support ecological
-                            balance.
-                            Examples include Yellowstone National Park in the
-                            U.S. and the Serengeti
-                            National Park in Africa."
+                            Sustainable land management focuses on using land
+                            resources efficiently while preserving ecosystems.
+                            Key practices include agroforestry, which integrates
+                            trees and shrubs into farming systems to improve
+                            soil fertility, reduce erosion, and enhance water
+                            retention. Crop rotation and diversification are
+                            also essential, as alternating crops and planting
+                            diverse species help maintain soil health and
+                            prevent nutrient depletion. Additionally,
+                            conservation tillage minimizes soil disturbance to
+                            preserve its structure and reduce erosion, making it
+                            a vital practice for sustainable agriculture.
                         </h3>
                     </div>
                 </div>
 
                 <div class="transparent-box" id="box2">
                     <div class="text-box">
-                        <h1>Anti-Poaching Efforts & Wildlife Law
-                            Enforcement</h1>
+                        <h1>Reforestation and Afforestation</h1>
                         <hr>
                         <h3>
-                            "Illegal wildlife trade and poaching threaten many
-                            species, including elephants,
-                            rhinos, and tigers. Conservation groups and
-                            governments implement strict
-                            anti-poaching laws, deploy ranger patrols, and use
-                            advanced technology like
-                            drones and AI-powered surveillance to track and
-                            prevent illegal activities.
-                            Organizations such as the WWF and WildAid play a
-                            crucial role in this fight."
+                            Planting trees is one of the most effective ways to combat desertification. Reforestation and afforestation stabilize soil, prevent erosion, and improve water cycles by promoting groundwater recharge. These practices also restore biodiversity by creating habitats for wildlife. Using native tree species ensures better adaptation to local conditions, enhancing the long-term sustainability of reforestation efforts.
                         </h3>
                     </div>
                     <img
-                        src="../images/vecteezy_ai-generated-jackal-high-quality-image_38008306.jpg"
+                        src="./images/2.jpg"
                         alt="box2" class="img-box">
                 </div>
 
                 <div class="transparent-box" id="box3">
                     <img
-                        src="../images/vecteezy_close-up-of-tree-stump-in-deforestation-area_47538197.jpeg"
+                        src="./images/3.jpg"
                         alt="box3" class="img-box">
                     <div class="text-box">
-                        <h1>Habitat Restoration & Reforestation</h1>
+                        <h1>Water Management Techniques</h1>
                         <hr>
                         <h3>
-                            "Deforestation, pollution, and climate change have
-                            led to habitat destruction,
-                            pushing species toward extinction. Reforestation
-                            projects, wetland restoration,
-                            and coral reef rehabilitation help restore
-                            ecosystems and improve biodiversity.
-                            Initiatives like the Trillion Trees Campaign and
-                            mangrove restoration projects
-                            aim to rebuild these critical environments."
+                            Efficient water use is critical in arid regions to combat desertification. Rainwater harvesting involves collecting and storing rainwater for irrigation and other uses, reducing reliance on scarce water resources. Drip irrigation delivers water directly to plant roots, minimizing waste and preventing soil salinization. Structures like check dams and terraces slow water flow, reduce erosion, and promote groundwater recharge, making them essential for sustainable water management.
                         </h3>
                     </div>
                 </div>
 
                 <div class="transparent-box" id="box4">
                     <div class="text-box">
-                        <h1>Community-Based Conservation & Ecotourism</h1>
+                        <h1>Soil Conservation Practices</h1>
                         <hr>
                         <h3>
-                            "Engaging local communities in conservation efforts
-                            ensures long-term sustainability.
-                            Programs that promote responsible ecotourism,
-                            sustainable farming,
-                            and wildlife-friendly livelihoods help balance
-                            economic development with
-                            nature preservation. Examples include community-led
-                            wildlife conservancies
-                            in Kenya and indigenous land stewardship programs in
-                            the Amazon rainforest."
+                            Protecting soil is essential to prevent desertification. Contour plowing, which involves plowing along the contours of the land, reduces runoff and erosion. Windbreaks, created by planting rows of trees or shrubs, shield soil from wind erosion. Mulching, the practice of covering soil with organic materials, helps retain moisture and prevent erosion, ensuring the soil remains fertile and productive.
                         </h3>
                     </div>
                     <img
-                        src="../images/vecteezy_man-in-hat-and-backpack-walking-through-tropical-plants_55966818.jpeg"
+                        src="./images/4.jpg"
                         alt="box4" class="img-box">
                 </div>
             </section>
