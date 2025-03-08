@@ -1,19 +1,5 @@
 /* ===== GLOBAL STYLES ===== */
 :root {
-    --primary-color: #4CAF50;
-    /* Fresher green */
-    --secondary-color: #2E7D32;
-    /* Deeper green */
-    --accent-color: #1B5E20;
-    /* Dark forest green */
-    --neutral-light: #F9F9F9;
-    /* Off-white */
-    --neutral-dark: #263238;
-    /* Dark charcoal */
-    --neutral-mid: #78909C;
-    /* Mid-tone for borders */
-    --success-color: #66BB6A;
-    /* Light green for success elements */
     --font-primary: 'Montserrat', 'Arial', sans-serif;
     --font-secondary: 'Open Sans', 'Roboto', sans-serif;
     --box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
