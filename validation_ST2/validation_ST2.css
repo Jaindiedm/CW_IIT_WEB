@@ -1,0 +1,102 @@
+    	 section {
+            margin:0 auto;
+            padding:10px;
+            background-color:#5a5a5a;
+            border-radius: 8px;
+			
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			width:1200px;
+			text-align:justify;
+			
+        }
+		img{
+			width: 90%;
+		}
+		.HTML{
+			padding:20px;
+			margin-left:4px;
+			width:1147px;
+			margin-right:4px;
+			background-color:#646464;
+			border:1px  solid white;
+		}
+		.CSS{
+			padding:20px;
+			margin-left:4px;
+			width:1147px;
+			margin-right:4px;
+			background-color:#646464;
+			border:1px  solid white;
+		}
+		.Home pageValidation{
+			width:1150px;
+			
+		}
+		Home page Refletion{
+			margin:5px;
+			width:1150px;
+		}
+		.paragraph{
+			width:1150px;
+			border:1px  solid white;
+		}
+		.splash screen{
+			margin-bottom:50px;
+		}
+		.main content{
+			margin-top:200px;
+		}
+		.introduction{
+			background-image: url("forest.jpg");
+		}
+		
+		
+	    .footer {
+			background-color: var(--primary-color);
+			color: var(--neutral-light);
+			padding: 3rem;
+			text-align: center;
+			margin-top: 20px;
+
+		}
+
+		.footer-links {
+		    display: flex;
+			justify-content: center;
+			gap: 3rem;
+			margin-bottom: 5px;
+			font-size: 1.2rem;
+			transition: 0.5s;
+			opacity: 0.75;
+			font-weight: 300;
+		}
+
+		.footer-links a {
+		  color: var(--neutral-light); /* This sets the link color to white */	
+		  text-decoration: none;
+		  transition: 0.3s;
+		}
+
+		.footer-links a:hover {
+			opacity: 1;
+			font-weight: bold;
+			color: var(--neutral-light);
+		}
+
+
+		.footer-line {
+			width: 100%;
+			height: 2px;
+			background-color: var(--neutral-dark);
+			margin-bottom: 30px;
+		}
+		h1{
+			text-align:center;
+		}
+		a{
+			color:#87CEFA;
+		}
+			
+		
+	
+		
