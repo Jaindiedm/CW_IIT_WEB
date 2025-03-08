@@ -20,12 +20,12 @@
 }
 
 /* Typography */
-h1 {
+.container h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-h2 {
+.container h2 {
     font-size: 1.8rem;
     margin: 25px 0 15px 0;
     color: #1a3623;
@@ -33,7 +33,7 @@ h2 {
     padding-bottom: 8px;
 }
 
-h3 {
+.container h3 {
     font-size: 1.4rem;
     margin: 20px 0 10px 0;
     color: #234826;
@@ -43,23 +43,23 @@ p {
     margin-bottom: 15px;
 }
 
-ul, ol {
+.container ul , ol {
     margin-bottom: 20px;
     padding-left: 25px;
 }
 
-li {
+.container li {
     margin-bottom: 8px;
-}
+}*/
 
 /* Link styles */
-a {
+.container a {
     color: #819a04;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-a:hover {
+.container a:hover {
     color: #41510e;
     text-decoration: underline;
 }
