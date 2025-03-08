@@ -83,7 +83,7 @@ line-height: 35px;
 
 .side-nav ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--neutral-dark);
     font-size: 18px;
     display: block;
     padding: 8px;
