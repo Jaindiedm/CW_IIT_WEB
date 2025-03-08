@@ -1,5 +1,5 @@
 /* Global styles */
-:root {
+ :root {
     --primary-color: #426838;
     --secondary-color: #6f9f10;
     --tertiary-color: #e74c3c;
@@ -8,7 +8,6 @@
     --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --border-radius: 8px;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -16,13 +15,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+#user-profile body {
     
     line-height: 1.6;
     padding: 20px;
 }
 
-.video-container {
+/*.video-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,7 +30,7 @@ body {
     overflow: hidden;
     z-index: -1;
 }
-
+*/
 
 
 

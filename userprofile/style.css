@@ -1,5 +1,5 @@
 /* ===== GLOBAL STYLES ===== */
-:root {
+#header :root {
     
     --primary-color: #1abf42;   
     --secondary-color: #228B22; 
@@ -11,16 +11,16 @@
   }
   
   /* Reset default margins/padding */
-  * {
+  #header * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  html {
+  #header html {
      scroll-behavior: smooth; /* Enables smooth scrolling */
   }
   
-  body {
+  #header body {
     font-family: var(--font-primary);
     line-height: 1.6;
     background-color: var(--neutral-dark);
