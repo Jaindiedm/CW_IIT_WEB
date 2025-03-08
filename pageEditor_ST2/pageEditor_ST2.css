@@ -7,7 +7,7 @@
     background-color: rgb(179, 205, 180);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     min-height: 100vh;
-    color: var(--neutral-dark)
+    color: var(--neutral-dark);
 }
 
 /* Header styles */
