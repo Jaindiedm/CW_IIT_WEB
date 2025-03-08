@@ -18,10 +18,10 @@
 body {
     background: linear-gradient(135deg, #e0f7fa, #b2dfdb);
     min-height: 100vh;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .container {
@@ -33,6 +33,9 @@ body {
     max-width: 900px;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .form-image {
