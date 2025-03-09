@@ -84,7 +84,7 @@
             <img src="../images/studen2_image.jpeg" alt="Profile Photo" class="profile-image">
             <div class="profile-info">
                 <h2 class="profile-name">Shenali Fernando</h2>
-                <p class="profile-role">Student 2 - Web Development Team 6</p>
+                <p class="profile-role">Student 2 - Web Development Team F</p>
                 <p>Student ID (UoW): w2120071</p>
                 <p>Student ID (IIT): 20240647</p>
                 <p>Email: shenali.20240647@iit.ac.lk</p>
@@ -143,15 +143,27 @@
             
             <div id="home" class="page-section">
                 <h3>Home Page</h3>
-                <p>...</p>
+                <p>The Home Page serves as the introduction to the website,
+                     featuring a hero section with a full-width background image, a navigation bar, 
+                     and an overview of key initiatives. It uses Flexbox for layout, ensuring 
+                     responsiveness and a visually engaging design.</p>
                 
-                <p>View the implemented page here: <a href="[link-to-]" target="_blank"></a> | <a href="[link-to-validation]" target="_blank">Validation Results</a></p>
+                <p>View the implemented page here: <a href="home.html" target="_blank">Home Page</a> | <a href="validation_ST2.html" target="_blank">Validation Results</a></p>
                 
                 <h4>Key HTML Elements</h4>
                 <div class="tech-details">
                     <p>I implemented the following key HTML elements:</p>
                     <ul>
-                        <li><strong></strong></li>
+                        <li><b>header</b><br>
+                            The header element is used to define the header section of the webpage, which typically contains navigation links and branding. In the home page, it includes the navigation bar with links to different pages, as well as the logo and title for the site.
+                        </li>
+                        <li><b>section</b><br>
+                            The section element is used to group content related to a specific topic or theme. On the home page, it is used to structure the content into sections like "Why Life on Land Matters?" and "Sustain Life on Land," making the page more organized and accessible to users and search engines.
+                        </li>
+                        <li><b>Anchor Link</b><br>
+                            The a tag is used for creating hyperlinks, allowing users to navigate between pages. In the home page, it is used in the navigation menu and in the cards/tiles section to provide links to other pages such as "Volunteer," "Data," and "Feedback." These anchor links help create a seamless browsing experience across the site.
+                        </li>
+                        
                     </ul>
                 </div>
                 
@@ -159,7 +171,18 @@
                 <div class="tech-details">
                     <p>For styling, I applied these key techniques:</p>
                     <ul>
-                        <li><strong></strong></li>
+                        <li><code>#panda-image</code><b>(Main Image Styling)</b><br>
+                            The main image is styled to cover the entire width of the page and be responsive. The <code>object-fit: cover;</code> ensures the image maintains its aspect ratio and fills the space without distortion.
+                        </li>
+                        <li><code>.image-container::after </code><b> (Blurred Bottom Effect)</b><br>
+                            This style applies a linear gradient effect at the bottom of the image with a slight blur. This effect creates a fading transition that enhances the visual appeal and ensures that the text overlay is more readable.
+                        </li>
+                        <li><code>.mission-section</code><b>(Mission Section Flexbox Layout)</b><br>
+                            The mission section uses <code>flexbox</code> to create a responsive layout where content like the tagline and description are displayed side by side. This section has a background gradient, padding, and subtle box shadows for a clean and modern look.
+                        </li>
+                        <li><code>.card</code><b>(Tile/Card Styling)</b><br>
+                            Each card or tile is styled with a background image, rounded corners, and a hover effect. The <code>:hover</code> pseudo-class is used to darken the background and reveal text when the user hovers over each card, improving interactivity.
+                        </li>
                     </ul>
                 </div>
                 
@@ -168,17 +191,24 @@
             
             <div id="table" class="page-section">
                 <h3>Table Page</h3>
-                <p></p>
+                <p>The Table Page presents organized data in a structured format, using CSS Grid and Flexbox for alignment and responsiveness. It includes interactive elements like hover effects and alternating row colors to enhance readability and usability.</p>
                 
-                <p>View the implemented page here: <a href="[link-to-volunteer-page]" target="_blank">Volunteer Page</a> | <a href="[link-to-validation]" target="_blank">Validation Results</a></p>
+                <p>View the implemented page here: <a href="table.html" target="_blank">Table Page</a> | <a href="validation_ST2.html" target="_blank">Validation Results</a></p>
                 
                 <h4>Key HTML Elements</h4>
                 <div class="tech-details">
                     <p>I implemented the following key HTML elements:</p>
                     <ul>
-                        <li><code></code></li>
-                        <li><code></code></li>
-                        <li><code></code></li>
+                        <li><b>header</b><br>
+                            The header element is used to define the header section of the webpage, which typically contains navigation links and branding. In the home page, it includes the navigation bar with links to different pages, as well as the logo and title for the site.
+                        </li>
+                        <li><b>section</b><br>
+                            The section element is used to group content related to a specific topic or theme. On the home page, it is used to structure the content into sections like "Why Life on Land Matters?" and "Sustain Life on Land," making the page more organized and accessible to users and search engines.
+                        </li>
+                        <li><b>Anchor Link</b><br>
+                            The a tag is used for creating hyperlinks, allowing users to navigate between pages. In the home page, it is used in the navigation menu and in the cards/tiles section to provide links to other pages such as "Volunteer," "Data," and "Feedback." These anchor links help create a seamless browsing experience across the site.
+                        </li>
+                        
                     </ul>
                 </div>
                 
@@ -186,10 +216,18 @@
                 <div class="tech-details">
                     <p>For styling, I applied these key techniques:</p>
                     <ul>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
+                        <li><code>table</code><b>(Table layout)</b><br>
+                            The main image is styled to cover the entire width of the page and be responsive. The <code>object-fit: cover;</code> ensures the image maintains its aspect ratio and fills the space without distortion.
+                        </li>
+                        <li><code>th</code><b> (Table header Styling)</b><br>
+                            This style applies a linear gradient effect at the bottom of the image with a slight blur. This effect creates a fading transition that enhances the visual appeal and ensures that the text overlay is more readable.
+                        </li>
+                        <li><code>.table-row:hover</code><b>(Raw hover effect)</b><br>
+                            The mission section uses <code>flexbox</code> to create a responsive layout where content like the tagline and description are displayed side by side. This section has a background gradient, padding, and subtle box shadows for a clean and modern look.
+                        </li>
+                        <li><code>.pagination</code><b>(Pagination styling)</b><br>
+                            Each card or tile is styled with a background image, rounded corners, and a hover effect. The <code>:hover</code> pseudo-class is used to darken the background and reveal text when the user hovers over each card, improving interactivity.
+                        </li>
                     </ul>
                 </div>
                 
@@ -198,18 +236,24 @@
             
             <div id="content" class="page-section">
                 <h3>Content Page</h3>
-                <p>This page provides detailed information about [topic], featuring a mix of text content, media, and interactive elements.</p>
+                <p>The Content Page provides detailed information on key topics, using structured sections with images, text, and interactive elements. It follows a responsive design, ensuring readability across different devices while maintaining a visually appealing layout.</p>
                 
-                <p>View the implemented page here: <a href="[link-to-content-page]" target="_blank">Content Page</a> | <a href="[link-to-validation]" target="_blank">Validation Results</a></p>
+                <p>View the implemented page here: <a href="content_ST2.html" target="_blank">Content Page</a> | <a href="validation_ST2.html" target="_blank">Validation Results</a></p>
                 
                 <h4>Key HTML Elements</h4>
                 <div class="tech-details">
-                    <p>:</p>
+                    <p>I implemented the following key HTML elements:</p>
                     <ul>
-                        <li><code></code></li>
-                        <li><code></code></li>
-                        <li><code></code></li>
-                        <li><code></code></li>
+                        <li><b>header</b><br>
+                            The header element is used to define the header section of the webpage, which typically contains navigation links and branding. In the home page, it includes the navigation bar with links to different pages, as well as the logo and title for the site.
+                        </li>
+                        <li><b>section</b><br>
+                            The section element is used to group content related to a specific topic or theme. On the home page, it is used to structure the content into sections like "Why Life on Land Matters?" and "Sustain Life on Land," making the page more organized and accessible to users and search engines.
+                        </li>
+                        <li><b>Anchor Link</b><br>
+                            The a tag is used for creating hyperlinks, allowing users to navigate between pages. In the home page, it is used in the navigation menu and in the cards/tiles section to provide links to other pages such as "Volunteer," "Data," and "Feedback." These anchor links help create a seamless browsing experience across the site.
+                        </li>
+                        
                     </ul>
                 </div>
                 
@@ -217,14 +261,22 @@
                 <div class="tech-details">
                     <p></p>
                     <ul>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
+                        <li><code>.content-header</code><b>(Content Header Styling)</b><br>
+                            The main image is styled to cover the entire width of the page and be responsive. The <code>object-fit: cover;</code> ensures the image maintains its aspect ratio and fills the space without distortion.
+                        </li>
+                        <li><code>.image-container::after </code><b> (Blurred Bottom Effect)</b><br>
+                            This style applies a linear gradient effect at the bottom of the image with a slight blur. This effect creates a fading transition that enhances the visual appeal and ensures that the text overlay is more readable.
+                        </li>
+                        <li><code>.mission-section</code><b>(Mission Section Flexbox Layout)</b><br>
+                            The mission section uses <code>flexbox</code> to create a responsive layout where content like the tagline and description are displayed side by side. This section has a background gradient, padding, and subtle box shadows for a clean and modern look.
+                        </li>
+                        <li><code>.button</code><b>(Button Styling)</b><br>
+                            Each card or tile is styled with a background image, rounded corners, and a hover effect. The <code>:hover</code> pseudo-class is used to darken the background and reveal text when the user hovers over each card, improving interactivity.
+                        </li>
                     </ul>
                 </div>
                 
-                <p>These techniques were chosen to create a ...</p>
+                <p>These techniques were chosen to create an engaging, accessible, and responsive entry point to our website that clearly communicates the site's purpose while providing easy navigation options.</p>
             </div>
         </section>
         
@@ -232,25 +284,23 @@
             <h2>3. Challenges and Lessons Learned</h2>
             
             <div class="challenge-box">
-                <h3>Challenge:</h3>
-                <p></p>
+                <h3>Challenge: Responsive Design Adjustments</h3>
+                <p>Ensuring all elements, including images and text, scale properly across different screen sizes was difficult.</p>
             </div>
             
             <div class="solution-box">
                 <h3>Solution:</h3>
-                <p></p>
-                <p></p>
+                <p>Used flexbox and grid layouts for flexible positioning and applied clamp() for font sizes to adjust text dynamically.</p>
             </div>
             
             <div class="challenge-box">
-                <h3>Challenge: </h3>
-                <p></p>
+                <h3>Challenge: Hover Effects on Content Tiles</h3>
+                <p>Initially, the hover effects on the cards were not working smoothly, and the text visibility was inconsistent.</p>
             </div>
             
             <div class="solution-box">
                 <h3>Solution:</h3>
-                <p></p>
-                <p></p>
+                <p>Implemented CSS transitions for smooth effects and used opacity changes to reveal text only on hover.</p>
             </div>
         </section>
         
@@ -258,28 +308,25 @@
             <h2>4. Accessibility</h2>
             <p>Ensuring accessibility was a priority throughout my development process. I implemented the following accessibility features for each page:</p>
             
-            <h3>[ ... ] Accessibility</h3>
+            <h3>Home Page Accessibility</h3>
             <ul>
-                <li></li>
-                <li></li>
-                <li><li>
-                <li></li>
+                <li>Semantic HTML – Used "header, nav, main, and footer" for better screen reader navigation.</li>
+                <li>High Contrast Text – Ensured text readability against background images using proper color contrast.</li>
+                <li>Keyboard Navigation – Made navigation links and interactive elements accessible via the keyboard.</li>
             </ul>
             
-            <h3>[ ...  ] Page Accessibility</h3>
+            <h3>Table Page Accessibility</h3>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>ARIA Labels – Used aria-label and aria-describedby for better screen reader interpretation of tables.</li>
+                <li>Keyboard-Friendly Table Navigation – Ensured users can navigate through table rows and columns using the keyboard.</li>
+                <li>Alternative Text for Images – Provided descriptive alt attributes for all images related to tabular data.</li>
             </ul>
             
-            <h3>[  ...  ] Page Accessibility</h3>
+            <h3>Content Page Accessibility</h3>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Proper Heading Structure – Used hierarchical headings (h1, h2, etc.) to organize content for better screen reader interpretation.</li>
+                <li>Sufficient Color Contrast – Ensured contrast between text and background meets WCAG standards.</li>
+                <li>Accessible Links & Buttons – Styled links with clear hover states and added aria-labels where necessary.</li>
             </ul>
             
            
@@ -312,15 +359,19 @@
             <div class="reference-list">
                 <ol>
 
-                    <li id="ref1"><a href="" target="_blank"></a></li>
-                    <li id="ref1"><a href="" target="_blank"></a></li>
-                    <li id="ref1"><a href="" target="_blank"></a></li>
-                    <li id="ref1"><a href="" target="_blank"></a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools. (n.d.). HTML and CSS Best Practices. Retrieved from https://www.w3schools.com</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank">Mozilla Developer Network (MDN). (n.d.). Responsive Web Design. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design</a></li>
+                    <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG). (n.d.). Making Websites Accessible. Retrieved from https://www.w3.org/WAI/standards-guidelines/wcag/</a></li>
+                    <li><a href="https://www.w3schools.com/html/html_tables.asp" target="_blank">W3Schools. (n.d.). HTML Tables. Retrieved from https://www.w3schools.com/html/html_tables.asp</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">MDN Web Docs. (n.d.). Accessible Tables. Retrieved from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table</a></li>
+                    <li><a href="https://webaim.org/techniques/tables/" target="_blank">WebAIM. (n.d.). Creating Accessible Tables. Retrieved from https://webaim.org/techniques/tables/</a></li>
+                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">W3Schools. (n.d.). HTML5 Semantic Elements. Retrieved from https://www.w3schools.com/html/html5_semantic_elements.asp</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">MDN Web Docs. (n.d.). CSS Styling Techniques. Retrieved from https://developer.mozilla.org/en-US/docs/Learn/CSS</a></li>
+                    <li><a href="https://www.nngroup.com/articles/website-readability/" target="_blank">Nielsen Norman Group. (n.d.). Best Practices for Web Content Readability. Retrieved from https://www.nngroup.com/articles/website-readability/</a></li>
+                    
 
                 </ol>
             </div>
-            
-            <p>In-text references: [<a href="#ref1">1</a>], [<a href="#ref2">2</a>], [<a href="#ref3">3</a>], [<a href="#ref4">4</a>], [<a href="#ref5">5</a>], [<a href="#ref6">6</a>]</p>
         </section>
     </div>
 </body>        
