@@ -154,31 +154,28 @@ code {
 
 .sidebar{
     width: 250px;
-    background-color:#228346;
+    background-color: rgb(179, 205, 180);
     padding: 35px;
     position:fixed;
     overflow-y: auto;
-    
     left: 0;
     top: 110px;
     bottom: 0;
-    border-right: 2px solid #d9ee60;
     
 }
 
 .sidebar h2{
-    font-size:20px;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #1c2d1c;
-    
-
-
+    font-size: 1.4rem;
+    margin: 25px 0 15px 0;
+    color: #1a3623;
+    border-bottom: 2px solid #e1f3b0;
+    padding-bottom: 8px;
 }
+
 .sidebar ul{
-    
+    list-style: none;
     padding: 0;
-    color: #183420;
+    color: var(--neutral-light);
     
 }
 .sidebar ul li{
@@ -187,39 +184,17 @@ code {
 
 }
 .sidebar ul li a{
-    text-decoration:#1a3623;
-    color: #bef105;
+    text-decoration: none;
+    color: var(--neutral-dark);
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: 0.3s;
 
 }
 .sidebar ul li a:hover{
-    text-decoration: underline;
-    color: #1a3623;
-}
-.primary-nav ul {
-    
-    padding: 0;
-    margin: 0;
-    display: flex;
-
-    justify-content: center;
-}
-
-.primary-nav li {
-    margin: 0 15px;
-}
-
-.primary-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 5px 10px;
-    border-radius: 3px;
-    transition: background-color 0.3s;
-}
-
-.primary-nav a:hover {
-    background-color: #e1dea2;
-    text-decoration: none;
+    background-color: rgba(34, 139, 34, 0.5);
 }
 
 /* Internal page navigation */
