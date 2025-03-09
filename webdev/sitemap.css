@@ -16,10 +16,12 @@ h1 {
 }
 
 svg {
-    display: block;
+    display:flex;
     margin: 0 auto;
     width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
+    height: 1500px;
+    
 }
 
 .node {
@@ -31,12 +33,103 @@ svg {
     transition: fill 0.3s ease;
 }
 
+
 .node:hover, .node:focus {
     fill: #85a869; /* Changes color on hover */
 }
-
+.node1{
+   fill:rgb(9, 103, 98) ;
+    text-decoration: underline;
+    stroke: #cbe5bf;
+    stroke-width: 4;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+    
+}
+.node1:hover, .node:focus {
+    fill: rgb(19, 165, 158) ; /* Changes color on hover */
+}
+.node2{
+    fill:rgb(9, 103, 59) ;
+    text-decoration: underline;
+    stroke: #cbe5bf;
+    
+    stroke-width: 4;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+.node2:hover, .node:focus {
+    fill: rgb(19, 170, 99); /* Changes color on hover */
+}
+.node3{
+    fill:rgb(43, 103, 9);
+    stroke: #cbe5bf;
+    
+    stroke-width: 4;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+.node3:hover, .node:focus {
+    fill: rgb(67, 157, 15); /* Changes color on hover */
+}
+.node4{
+    fill: rgb(103, 103, 9);
+    stroke: #cbe5bf;
+    
+    stroke-width: 4;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+.node4:hover, .node:focus {
+    fill: rgb(162, 162, 16); /* Changes color on hover */
+}
+.node5{
+    fill:rgb(183, 155, 113) ;
+     text-decoration: underline;
+     stroke: #cbe5bf;
+     stroke-width: 4;
+     cursor: pointer;
+     transition: fill 0.3s ease;
+     
+ }
+ .node5:hover, .node:focus {
+     fill: rgb(216, 173, 109) ; /* Changes color on hover */
+ }
+ .node6{
+     fill:rgb(164, 152, 84) ;
+     text-decoration: underline;
+     stroke: #cbe5bf;
+     
+     stroke-width: 4;
+     cursor: pointer;
+     transition: fill 0.3s ease;
+ }
+ .node6:hover, .node:focus {
+     fill: rgb(194, 180, 100); /* Changes color on hover */
+ }
+ .node7{
+     fill:rgb(155, 164, 76);
+     stroke: #cbe5bf;
+     stroke-width: 4;
+     cursor: pointer;
+     transition: fill 0.3s ease;
+ }
+ .node7:hover, .node:focus {
+     fill: rgb(182, 192, 92); /* Changes color on hover */
+ }
+ .node8{
+     fill: rgb(107, 155, 82);
+     stroke: #cbe5bf;
+     
+     stroke-width: 4;
+     cursor: pointer;
+     transition: fill 0.3s ease;
+ }
+ .node8:hover, .node:focus {
+     fill: rgb(130, 186, 100); /* Changes color on hover */
+ }
 text {
-    font-size: auto;
+    
     fill: #06f465b3;
     font-weight: bold;
     font-family:Verdana, Geneva, Tahoma, sans-serif;

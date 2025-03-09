@@ -79,6 +79,7 @@
     margin: 0 15px;
 }
 
+
 .primary-nav a {
     color: white;
     text-decoration: none;
@@ -88,8 +89,10 @@
     transition: background-color 0.3s;
 }
 
+
+
 .primary-nav a:hover {
-    background-color: #e1dea2;
+    background-color: #a2e1a3;
     text-decoration: none;
 }
 
@@ -142,12 +145,24 @@ p {
 
 /* Page sections */
 .page-section {
-    background-color: #fbfaf4;
+    background-color: rgb(147, 179, 147);
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 25px;
     border-left: 4px solid #566b23;
 }
+
+.page-section a {
+    color: #1b5b15;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.page-section a:hover {
+    color: #c4f915;
+    text-decoration:overline;
+}
+
 
 .tech-details {
     background-color: #f5f5f5;
@@ -182,22 +197,26 @@ aside li{
 }
 
 aside ul {
-    list-style: none;
+    list-style:none;
     padding: 0;
+    color: #4d4f16;
+    font-size: 20px;
+    
 }
 
 aside ul li a {
     text-decoration: none;
-    color: var(--neutral-dark);
-    font-size: 16px;
+    color:#135c0a;
+    font-size: 17px;
     display: block;
-    padding: 8px;
+    padding: 4px;
     border-radius: 5px;
     transition: 0.3s;
 }
 
 aside ul li a:hover {
-    background-color: rgba(34, 139, 34, 0.5);
+    background-color: rgba(122, 219, 70, 0.5);
+    
 }
        
 .top a {
