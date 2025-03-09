@@ -1,39 +1,25 @@
 /* Global styles */
-.container1 :root {
-    --primary-color: #426838;
-    --secondary-color: #6f9f10;
-    --tertiary-color: #e74c3c;
-    --dark-color: #1f4825;
-    --light-color: #c6f9c1;
-    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    --border-radius: 8px;
+:root {
+    --primary-color1: #426838;
+    --secondary-color1: #6f9f10;
+    --tertiary-color1: #e74c3c;
+    --dark-color1: #1f4825;
+    --light-color1: #c6f9c1;
+    --shadow1: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius1: 8px;
 }
-.container1 * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container1 body {
+body {
     
     line-height: 1.6;
     padding: 20px;
 }
-
-/*.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-*/
-
-
-
 /* Layout */
 .container1 {
     max-width: 1200px;
@@ -46,8 +32,8 @@
 /* Card styling */
 .card {
     background: rgb(181, 196, 179);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    border-radius: var(--border-radius1);
+    box-shadow: var(--shadow1);
     padding: 20px;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
@@ -61,24 +47,30 @@
 .profile-section {
     text-align: center;
 }
-
+.card{
+    color: #434a04;
+    font-size: 18px;
+}
+.card h2{
+    color: rgb(53, 75, 38);;
+}
 .profile-picture {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid var(--primary-color);
+    border: 5px solid var(--primary-color1);
     margin: 0 auto 15px;
 }
 
 .profile-name {
     font-size: 1.8rem;
     margin-bottom: 5px;
-    color: var(--dark-color);
+    color: var(--dark-color1);
 }
 
 .profile-title {
-    color: var(--primary-color);
+    color: var(--primary-color1);
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -91,18 +83,20 @@
 .calendar-section h3,
 .contact-section h3 {
     margin-bottom: 15px;
-    color: var(--dark-color);
-    border-bottom: 2px solid var(--primary-color);
+    color: var(--dark-color1);
+    border-bottom: 2px solid var(--primary-color1);
     padding-bottom: 5px;
 }
 
 .skill-name {
+    color: #3a420c;
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
 }
 
 .skill-bar {
+   
     height: 10px;
     background: #d9dbd9;
     border-radius: 5px;
@@ -110,16 +104,23 @@
     overflow: hidden;
 }
 
+.goals1{
+    margin-bottom: 30px;
+}
 .skill-level {
     height: 100%;
-    background: var(--primary-color);
+    background: var(--primary-color1);
 }
 
 /* Goals section */
-.goal-item {
-    margin-bottom: 10px;
+.goals-item {
+    margin-bottom: 40px;
 }
-
+.goals-section{
+    color: #0b270e;
+   
+    
+}
 /* Volunteering and Interests */
 .icon-list {
     display: flex;
@@ -143,7 +144,7 @@
 
 .icon {
     font-size: 2rem;
-    background: var(--light-color);
+    background: var(--light-color1);
     width: 50px;
     height: 50px;
     display: flex;
@@ -151,43 +152,46 @@
     justify-content: center;
     border-radius: 50%;
     margin-bottom: 5px;
-    color: var(--primary-color);
+    color: var(--primary-color1);
 }
 
 /* Calendar/Table */
-.container1 table {
+.table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    
 }
 
 .container1 th, td {
-    border: 1px solid #ececcf;
+    border: 1px solid #585804;
     padding: 8px;
     text-align: center;
+    color: #0b270e;
 }
 
 .container1 th {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--primary-color1);
+    color: rgb(16, 36, 10);
 }
 
 .container1 tr:nth-child(even) {
-    background-color: #f9f9e2;
+    background-color: #828216;
 }
 
 /* Contact form */
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    
 }
 
-.container1 label {
+.label {
     display: block;
     margin-bottom: 5px;
     font-weight: 600;
 }
 
-.container1 input, textarea {
+.input, textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -195,18 +199,19 @@
     font-size: 1rem;
 }
 
-.container1 .btn {
-    background-color: var(--primary-color);
+.btn {
+    background-color: var(--primary-color1);
     color: white;
     border: none;
     padding: 10px 15px;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s;
+    
 }
 
-.container1 .btn:hover {
+.btn:hover {
     background-color: #909a12;
 }
 
@@ -221,19 +226,10 @@ footer {
     margin-top: 30px;
     text-align: center;
     padding: 15px;
-    background-color: var(--dark-color);
+    background-color: var(--dark-color1);
     color: white;
     border-radius: var(--border-radius);
 }
-
-/*footer a {
-    color: var(--light-color);
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}*/
 
 /* Responsive design */
 @media (max-width: 768px) {
