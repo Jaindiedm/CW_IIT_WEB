@@ -1,0 +1,222 @@
+.container-0 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(179, 205, 180);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: var(--neutral-dark)
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1235px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+#sub-header {
+    background-color: #228346;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Profile section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #f2f7f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 3px solid #385e0d;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #c7db2d;
+}
+
+.profile-role {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+/* Primary Navigation */
+.primary-nav {
+    background-color: #228346;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.primary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.primary-nav li {
+    margin: 0 15px;
+}
+
+.primary-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.primary-nav a:hover {
+    background-color: #e1dea2;
+    text-decoration: none;
+}
+
+main {
+    flex: 3;
+}
+
+/* Typography */
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    font-size: 1.8rem;
+    margin: 25px 0 15px 0;
+    color: #1a3623;
+    border-bottom: 2px solid #e1f3b0;
+    padding-bottom: 8px;
+}
+
+.container h3 {
+    font-size: 1.4rem;
+    margin: 20px 0 10px 0;
+    color: #234826;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.container-0 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.container-0 h2 {
+    font-size: 1.8rem;
+    margin: 25px 0 15px 0;
+    color: #1a3623;
+    border-bottom: 2px solid #e1f3b0;
+    padding-bottom: 8px;
+}
+
+.container-0 h3 {
+    font-size: 1.4rem;
+    margin: 20px 0 10px 0;
+    color: #234826;
+}
+
+/* Page sections */
+.page-section {
+    background-color: #fbfaf4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border-left: 4px solid #566b23;
+}
+
+.tech-details {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+
+aside {
+    flex: 1;
+    background-color: rgb(179, 205, 180);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-right: 20px;
+	margin-bottom: 25px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgb(179, 205, 180);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	color: var(--neutral-dark)
+}
+
+aside a{
+    text-decoration : none;
+}
+
+aside li{
+    padding-bottom: 4px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: var(--neutral-dark);
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+aside ul li a:hover {
+    background-color: rgba(34, 139, 34, 0.5);
+}
+       
+.top a {
+    padding: 0.8rem 2rem; /* Adds padding for button-like feel */
+    background-color: rgba(34, 139, 34, 0.5); /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+	transition: opacity 0.3s;
+}
+
+.top a:hover {
+	opacity: 1;
+    background-color: var(--secondary-color); /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+img{
+    width: 90%;
+}
