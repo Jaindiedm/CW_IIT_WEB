@@ -1,0 +1,214 @@
+/* ##### CONTENTPAGE-STYLES ##### */
+
+.wrapper-content{
+	 max-width: 1250px;
+     margin: 1rem 2.5rem 3rem auto;
+     padding: 0 1rem;
+	 margin-left: 250px;
+}
+
+.transparent-box{
+/*color: rgb(255, 188, 5);*/
+width: 95%;
+margin: auto;
+margin-top: 4%;
+margin-bottom: 8%;
+display: flex;
+flex-direction: row;
+border-radius: 20px;
+background: linear-gradient(360deg, var(--neutral-dark) 20%, #212221  100%);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+#box1{
+    color: rgb(250, 200, 63);
+}
+#box1 h3{
+    background-color: rgb(231, 242, 185);
+    color: rgb(151, 123, 46);
+}
+#box2{
+    color: rgb(49, 198, 69);
+}
+#box2 h3{
+    background-color: rgb(197, 241, 182);
+    color:rgb(37, 96, 45) ;
+}
+.img-box{
+    margin: auto 4% auto 4%;
+    object-fit: cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 0px;
+}
+
+.text-box{
+    
+    margin: 2% auto  2% auto;
+    background-color: rgba(5, 3, 3, 0.089);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+
+}
+
+.text-box ul{
+    margin: 50px;
+}
+
+.text-box h3{
+    text-align: center;
+    font-size: 19px;
+    margin-top: 2%;
+    margin: 2% 1% 2% 1%;
+    line-height: 35px;
+}
+
+.content h1 {
+    margin-top: 2%;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    /*border-top: 2px var(--neutral-dark) solid;
+    border-bottom: 2px var(--neutral-light) solid;*/
+}
+
+.content h1{
+    margin-top: 4%;
+	margin-bottom: 4%;
+    font-size: 40px;
+    display: flex;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 100px;
+    border-top: 2px var(--neutral-light) solid;
+    border-bottom: 2px var(--neutral-light) solid;	
+    background-color: rgb(186, 192, 165);
+
+}
+.importance1 h2 {
+    
+	margin-bottom: 4%;
+    font-size: 35px;
+    display: flex;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 200px;
+    border-bottom: 2px var(--neutral-light) solid;	
+}
+
+.efforts h2 {
+    
+	margin-bottom: 4%;
+    font-size: 35px;
+    display: flex;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 100px;
+    border-bottom: 2px var(--neutral-light) solid;	
+}
+.efforts1 h1{
+    font-size: 35px;
+}
+.importance h2 {
+    
+	margin-bottom: 4%;
+    font-size: 35px;
+    display: flex;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 100px;
+    border-bottom: 2px var(--neutral-light) solid;	
+}
+
+.side-nav {
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+	height: 600px;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    margin: 10px 0;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.side-nav ul li a:hover {
+    background: var(--secondary-color);
+}
+
+.how-to-help h2 {
+    margin-top: 4%;
+	margin-bottom: 4%;
+    font-size: 35px;
+    display: flex;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 100px;
+    border-top: 2px var(--neutral-light) solid;
+    border-bottom: 2px var(--neutral-light) solid;	
+}
+
+.how-to-help p {
+	font-size: 18px;	
+	margin-bottom: 2%;
+}
+
+.efforts h2 {
+	margin-top: 4%;
+	margin-bottom: 2%;
+    font-size: 35px;
+    display: flex;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    /*height: 80px;
+    border-top: 2px var(--neutral-light) solid;
+    border-bottom: 2px var(--neutral-light) solid;	*/
+}
+.efforts p{
+    font-size: 1.1rem;
+}
+.description {
+	font-size: 1.1rem;	
+	margin-bottom: 2%;
+
+}
+.importance h2{
+    font-size: 35px;
+
+}
+.importance{
+    font-size: 1.1rem;
+}
+
+.initiatives h2 {
+	margin-top: 2%;
+    font-size: 35px;
+    display: flex;
+    height: 60px;
+	
+}
