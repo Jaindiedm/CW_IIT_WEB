@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life on Land</title>
+    <style>
+	/* define what animation is used*/
+		@keyframes fadeIn { 
+			0% { 			/* beginning of the animation*/
+				opacity : 0;/* fully transperent*/
+			}
+			100% {   		/* end of the tranperency*/
+				opacity : 1 ;
+			}
+		}
+
+        /* newly added fadeOut animation */
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+		
+		
+		h1 {
+            font-size: 100px;
+            font-family: Rubik, sans-serif;
+            position: relative;
+            top: 40px;
+            left: 350px;
+			font-weight:bold;
+			color:#1abf42;
+			-webkit-text-stroke: 2px #f4f4f4;
+			animation: fadeIn 3s ease-in-out;/*apply the animation for the header*/
+		}
+		#myVideo {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit:cover; /* covers the entire screen */
+			z-index:-1; /*places elements behind all other texts appear infront of it, the lower the number the further behind it gets*/
+		}
+		
+		h4 {
+			display:flex;
+			height:5vh;
+			justify-content:center;
+			font-size:35px;
+			font-family:Times New Roman; ;
+			align-items:center;
+			margin bottom:100px;
+			margin-top:80px;
+			position:relative;
+			left:0;
+			color:#f4f4f4;
+			bottom:16px;
+			-webkit-text-stroke: 0.08px #FFFFFF;
+			animation: fadeIn 3s ease-in-out;/*apply the animation for the header*/
+			
+		}
+		h5 {
+			display:flex;
+			height:5vh;
+			flex-direction:column;
+			font-size:30px;
+			font-family:Times New Roman;
+			align-items:center;
+			margin:5px;
+			left:60px;
+			padding:4;
+			color:#f4f4f4;
+			top:20px;
+			animation: fadeIn 3s ease-in-out;/*apply the animation for the header*/
+		}
+		
+		
+		
+		
+		
+		
+		
+        .introduction {
+            position: relative;
+            z-index: 1; /* Ensures the text stays above the video */
+			animation: fadeIn 2s;
+		}
+		.introduction.fade-out {
+			animation: fadeOut 1s forwards;
+		}
+		
+		
+		.description {
+			position:relative;
+			z-index:1
+		}
+		
+			
+		
+   </style>
+</head>
+<body>
+    <div class="introduction">
+        <h1 class="header">
+            <span class="logo">Life On</span><span class="logo"> Land</span>
+        </h1> 
+	
+		<div class="description">
+			<h4>"A healthy land is the key to a thriving life on Earth."</h4>
+	
+			<div class="Group members">
+				<h5>Group Memebrs</h5>
+				<h5>Hasindi</h5>
+				<h5>Imasha</h5>
+				<h5>Shenali</h5>
+				<h5>Jaindi</h5>
+			</div>
+		</div>
+	</div>
+	
+	
+	<video autoplay muted loop id="myVideo">
+		<source src="images/jungle.mp4" type="video/mp4">
+	</video>
+
+	<script>
+		// Hide splash screen after 2 seconds and go to home.html
+		setTimeout(() => {
+			const splash = document.querySelector('.introduction');
+			splash.classList.add('fade-out');
+
+			
+			setTimeout(() => {
+				window.location.href = "home.html"; // the home screen location
+			}, 1000);
+		}, 2000);
+	</script>
+	
+</body>
+</html>
