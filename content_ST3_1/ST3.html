@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Combact Desertification</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="ST3.css">
+        <link rel="shortcut icon" href="../images/green-SDG15logo.png"
+            type="image/png">
+            <link rel="stylesheet" href="../footer_navbar.css">
+        <script>
+            /* JavaScript functionality for go-to-top button */
+document.addEventListener('DOMContentLoaded', function() {
+  const goTopBtn = document.getElementById('go-to-top');
+  
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      goTopBtn.classList.add('visible');
+    } else {
+      goTopBtn.classList.remove('visible');
+    }
+  });
+  
+  // Add animation to sections when they come into view
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-content');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.1,
+    rootMargin: '0px'
+  });
+  
+  document.querySelectorAll('.transparent-box, .how-to-help, .efforts, .importance').forEach(section => {
+    observer.observe(section);
+  });
+});
+        </script>
+    </head>
+    <body>
+        <!-- Header with Navigation -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="brand">
+                    <img src="../images/white-SDG15logo.jpg" alt="SDG 15 Logo"
+                        class="logo">
+                    <span>LIFE <br> ON LAND</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home ≫</a></li>
+                    <li><a href="volunteer.html">Volunteer ≫</a></li>
+                    <li><a href="table.html">Data ≫</a></li>
+                    <li><a href="../feedback/feedback.html">Feedback ≫</a></li>
+                    <li><a href="profile.html">Profile ≫</a></li>
+                    <li><a href="sitemap.html">Sitemap ≫</a></li>
+                    <li><a href="../team/team.html">Team ≫</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="wrapper-content">
+            <div class="content">
+                <h1>Combact Desertification</h1>
+                <div class="sub-topics">
+                    <nav class="side-nav">
+                        <ul>
+                            <li><a href="#box1">Sustainable Land Management
+                                    (SLM)</a></li>
+                            <li><a href="#box2">Reforestation and
+                                    Afforestation</a></li>
+                            <li><a href="#box3">Water Management
+                                    Techniques</a></li>
+                            <li><a href="#box4">Soil Conservation
+                                    Practices</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="efforts">
+                <h1>Combatting Desertification: Restoring Degraded Lands and
+                    Preventing Soil Erosion</h1>
+                <p class="description">
+                    Desertification is a growing environmental crisis that
+                    threatens the livelihoods of millions of people worldwide.
+                    It occurs when fertile land transforms into arid desert due
+                    to factors like deforestation, unsustainable farming,
+                    overgrazing, and climate change. The good news is that
+                    desertification can be reversed through effective strategies
+                    and sustainable practices. This page explores actionable
+                    solutions to restore degraded lands, prevent soil erosion,
+                    and build a resilient future.
+                </p>
+            </div>
+
+            <!-- Section: Importance of Wildlife Conservation -->
+            <section class="importance" style="text-align: left; padding:20px;">
+                <h2>What is Desertification?</h2>
+                <p class="description">
+                    Desertification is the process by which fertile land becomes
+                    desert, often due to human activities and climatic changes.
+                    It leads to:
+                </p>
+                <div style="padding-left: 50px;">
+                    <ul>
+                        <li>Loss of arable land</li>
+                        <li>Reduced biodiversity</li>
+                        <li>Increased soil erosion</li>
+                        <li>Water scarcity</li>
+                        <li>Food insecurity</li>
+                    </ul>
+
+                </div>
+                <p class="description">
+                    Over 2 billion people worldwide are affected by
+                    desertification, making it a critical global issue. However,
+                    with the right strategies, we can restore degraded lands and
+                    protect our planet.
+                </p>
+            </section>
+
+            <!-- Section: Key Initiatives -->
+            <section class="initiatives">
+                <h2>Key Strategies to Combat Desertification</h2>
+                <div class="transparent-box" id="box1">
+                    <img
+                        src="./images/1.webp"
+                        alt="box1" class="img-box">
+                    <div class="text-box">
+                        <h1>Sustainable Land Management</h1>
+                        <hr>
+                        <h3>
+                            Sustainable land management focuses on using land
+                            resources efficiently while preserving ecosystems.
+                            Key practices include agroforestry, which integrates
+                            trees and shrubs into farming systems to improve
+                            soil fertility, reduce erosion, and enhance water
+                            retention. Crop rotation and diversification are
+                            also essential, as alternating crops and planting
+                            diverse species help maintain soil health and
+                            prevent nutrient depletion. Additionally,
+                            conservation tillage minimizes soil disturbance to
+                            preserve its structure and reduce erosion, making it
+                            a vital practice for sustainable agriculture.
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="transparent-box" id="box2">
+                    <div class="text-box">
+                        <h1>Reforestation and Afforestation</h1>
+                        <hr>
+                        <h3>
+                            Planting trees is one of the most effective ways to combat desertification. Reforestation and afforestation stabilize soil, prevent erosion, and improve water cycles by promoting groundwater recharge. These practices also restore biodiversity by creating habitats for wildlife. Using native tree species ensures better adaptation to local conditions, enhancing the long-term sustainability of reforestation efforts.
+                        </h3>
+                    </div>
+                    <img
+                        src="./images/2.jpg"
+                        alt="box2" class="img-box">
+                </div>
+
+                <div class="transparent-box" id="box3">
+                    <img
+                        src="./images/3.jpg"
+                        alt="box3" class="img-box">
+                    <div class="text-box">
+                        <h1>Water Management Techniques</h1>
+                        <hr>
+                        <h3>
+                            Efficient water use is critical in arid regions to combat desertification. Rainwater harvesting involves collecting and storing rainwater for irrigation and other uses, reducing reliance on scarce water resources. Drip irrigation delivers water directly to plant roots, minimizing waste and preventing soil salinization. Structures like check dams and terraces slow water flow, reduce erosion, and promote groundwater recharge, making them essential for sustainable water management.
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="transparent-box" id="box4">
+                    <div class="text-box">
+                        <h1>Soil Conservation Practices</h1>
+                        <hr>
+                        <h3>
+                            Protecting soil is essential to prevent desertification. Contour plowing, which involves plowing along the contours of the land, reduces runoff and erosion. Windbreaks, created by planting rows of trees or shrubs, shield soil from wind erosion. Mulching, the practice of covering soil with organic materials, helps retain moisture and prevent erosion, ensuring the soil remains fertile and productive.
+                        </h3>
+                    </div>
+                    <img
+                        src="./images/4.jpg"
+                        alt="box4" class="img-box">
+                </div>
+            </section>
+
+            <!-- Section: How You Can Help -->
+            <section class="how-to-help">
+                <h1>How You Can Help</h1>
+                <p>
+                    You can contribute to wildlife conservation by supporting
+                    local and global initiatives, volunteering your time,
+                    or simply spreading awareness about the importance of
+                    protecting our planet's biodiversity.
+                </p>
+                <a href="volunteer.html" class="btn">Get Involved</a>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="home.html" target="_blank">Home</a>
+                <a href="volunteer.html" target="_blank">Volunteer</a>
+                <a href="table.html" target="_blank">Data</a>
+                <a href="../feedback/feedback.html" target="_blank">Feedback</a>
+                <a href="../team/team.html" target="_blank">Team</a>
+                <a href="profile.html" target="_blank">Profile</a>
+                <a href="sitemap.html" target="_blank">Sitemap</a>
+                <a href="../Editor_ST3/pageEditor_ST3.html" target="_blank">Editor Page</a>
+            </div>
+            <div class="footer-line"></div>
+            <p>&copy; 2025 LIFE ON LAND SDG 15 | All rights reserved.</p>
+        </footer>
+
+        <!-- Go to Top Button -->
+        <a href="#" id="go-to-top">▲</a>
+    </body>
+</html>

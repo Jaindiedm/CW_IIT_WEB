@@ -1,0 +1,156 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #5e8a6b;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+.sechead {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+
+.sechead h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.team-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.member {
+    position: relative;
+    width: 280px;
+    margin: 20px;
+    background: #eed1d1;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    height: 300px;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    height: 480px;
+}
+
+.member-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.member:hover .member-image {
+    border-color: #385441;
+}
+
+.member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.member:hover img {
+    transform: scale(1.1);
+}
+
+.member h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #385441;
+    transition: all 0.3s ease;
+}
+
+.role {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.details {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+}
+
+.member:hover .details {
+    opacity: 1;
+    max-height: 180px;
+}
+
+.details p {
+    margin-bottom: 10px; /* Reduce from 15px */
+    font-size: 0.85rem; /* Slightly smaller text */
+    line-height: 1.4; /* Slightly tighter line height */
+    color: #555;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Reduce from 15px */
+    gap: 10px; /* Reduce from 15px */
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #385441;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    background: #2c4233;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Fix for spacing inconsistency on Student 4 */
+.member h3, .member h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #385441;
+    margin: 10px 0;
+}
+
+.teamheader{
+
+    background-color: #2ecc71 !important;
+}
+
+.teamFooter{
+
+    background-color: #2ecc71 !important; 
+}

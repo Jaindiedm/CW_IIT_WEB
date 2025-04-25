@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="../footer_navbar.css">
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="brand">
+                <img src="../images/white-SDG15logo.jpg" alt="SDG 15 Logo"
+                    class="logo">
+                <span>LIFE <br> ON LAND</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home ≫</a></li>
+                <li><a href="volunteer.html">Volunteer ≫</a></li>
+                <li><a href="table.html">Data ≫</a></li>
+                <li><a href="feedback.html" class="active">Feedback ≫</a></li>
+                <li><a href="profile.html">Profile ≫</a></li>
+                <li><a href="sitemap.html">Sitemap ≫</a></li>
+                <li><a href="../team/team.html">Team ≫</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="form-image">
+            <div class="form-image-content">
+                <h2>We Value Your Feedback</h2>
+                <p>Help us improve your experience</p>
+            </div>
+        </div>
+        <div class="form-content">
+            <!-- Form Section -->
+            <div id="formSection">
+                <div class="form-header">
+                    <h1>Share Your Thoughts</h1>
+                    <p>We'd love to hear what you think about our website</p>
+                </div>
+                
+                <form id="feedbackForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname" required autofocus>
+                            <div class="error" id="firstname-error">Please enter your first name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                            <div class="error" id="lastname-error">Please enter your last name</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error" id="email-error">Please enter a valid email address</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="teleNo">Phone Number</label>
+                            <input type="tel" id="teleNo" name="teleNo" required>
+                            <div class="error" id="teleNo-error">Please enter your phone number</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label>Was this website informative and easy to navigate?</label>
+                        <div class="radio-group">
+                            <label class="radio-item">
+                                <input type="radio" id="yes" name="Informative_easy" value="Yes" required>
+                                Yes
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" id="no" name="Informative_easy" value="No">
+                                No
+                            </label>
+                        </div>
+                        <div class="error" id="Informative_easy-error">Please select an option</div>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="suggest">If "No", please suggest improvements</label>
+                        <textarea name="suggest" id="suggest" placeholder="Your suggestions..."></textarea>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="update">Would you like to receive updates?</label>
+                        <select name="update" id="update">
+                            <option value="yes-email">Yes - via Email</option>
+                            <option value="yes-tele">Yes - via Phone</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label for="comment">Additional questions or requests</label>
+                        <textarea name="comment" id="comment" placeholder="Tell us more..."></textarea>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 30px;">
+                        <label>Rate your experience</label>
+                        <div class="rating">
+                            <input type="radio" name="star" id="star5" value="5" required>
+                            <label for="star5">★</label>
+                            <input type="radio" name="star" id="star4" value="4">
+                            <label for="star4">★</label>
+                            <input type="radio" name="star" id="star3" value="3">
+                            <label for="star3">★</label>
+                            <input type="radio" name="star" id="star2" value="2">
+                            <label for="star2">★</label>
+                            <input type="radio" name="star" id="star1" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                        <div class="error" id="star-error">Please rate your experience</div>
+                    </div>
+                    
+                    <button type="submit" id="submitBtn">Submit Feedback</button>
+                    <div class="form-error-message" id="form-error-message">Please fill out all required fields</div>
+                </form>
+            </div>
+            
+            <!-- Preview Section -->
+            <div id="formPreview">
+                <h2>Review Your Feedback</h2>
+                <div id="previewContent">
+                    <!-- Preview content will be populated by JavaScript -->
+                </div>
+                <div class="button-group">
+                    <button id="editButton">Edit Response</button>
+                    <button id="finalSubmitButton">Submit Final</button>
+                </div>
+            </div>
+            
+            <!-- Thank You Message -->
+            <div id="thankYouMessage">
+                <div class="thank-you-icon">✓</div>
+                <h2>Thank You for Your Feedback!</h2>
+                <p>We appreciate your time and thoughts. Your feedback helps us improve our services.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" >
+        <div class="footer-links">
+            <a href="home.html" target="_blank">Home</a>
+            <a href="volunteer.html" target="_blank">Volunteer</a>
+            <a href="table.html" target="_blank">Data</a>
+            <a href="feedback.html" target="_blank">Feedback</a>
+            <a href="../team/team.html" target="_blank">Team</a>
+            <a href="profile.html" target="_blank">Profile</a>
+            <a href="sitemap.html" target="_blank">Sitemap</a>
+            <a href="../Editor_ST3/pageEditor_ST3.html" target="_blank">Editor Page</a>
+        </div>
+        <div class="footer-line"></div>
+        <p>&copy; 2025 LIFE ON LAND SDG 15 | All rights reserved.</p>
+    </footer>
+
+    <script src="feedback.js"></script>
+</body>
+</html>
