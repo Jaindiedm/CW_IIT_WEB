@@ -266,6 +266,22 @@ code {
     nav li {
         margin: 5px 0;
     }
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: transform var(--transition-speed);
+}
+
+
+.logo{
+	  width: 100px;
+	  height: 100px;
+	  border-radius: 50%;
+	  object-fit: cover;
+	  border: 2px solid var(--neutral-light);
+}
     
     
 }
