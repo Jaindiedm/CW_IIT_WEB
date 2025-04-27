@@ -1,0 +1,725 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life on Land</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="volunteerpage_ST2.css">
+	<link rel="shortcut icon" href="images/SDG15logo.png" type="image/png">
+
+	<style>
+	 :root {
+		--primary-color: #1abf42;   
+		--secondary-color: #228B22; 
+		--accent-color: #183118;    
+		--neutral-light: #f4f4f4;   
+		--neutral-dark: #333;       
+		--font-primary: 'Giorgio Sans Bold', sans-serif;
+		--font-bold: 'Roboto', sans-serif;				  				  
+	 }
+	 * Reset default margins/padding */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	 }
+	 html {
+		scroll-behavior: smooth; /* Enables smooth scrolling */
+	 }
+
+	 body {
+		font-family: var(--font-primary);
+		line-height: 1.6;
+		background-color: var(--neutral-dark);
+		color: var(--neutral-light);
+	 }
+	 /* ===== HEADER & NAVIGATION ===== */
+	.header {
+		background-color: var(--primary-color);
+		padding: 20px;
+		position: sticky;
+		top: 0;
+		z-index: 1000; 
+	 }
+
+	.navbar {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  max-width: 1200px;
+	  margin: 0 auto;
+	}
+
+	/* New container to group the logo and text together */
+	.brand {
+	  display: flex;
+	  align-items: center;
+	  gap: 7px; /* Adjust this to control spacing */
+	}
+
+	.logo {
+	  height: 70px;
+	  width: auto;
+	}
+	.navbar span{
+		display: block;
+		font-size: 30px;
+		font-weight: bold;
+		color: white;
+		margin-left: 5px; /* Reduce or remove this to bring them closer */
+		line-height: 1.1; /* Adjust this value as needed */
+	}
+
+	.nav-links {
+	  display: flex;
+	  gap: 1rem;
+	  list-style: none;
+	  font-family: var(--font-bold);
+	}
+
+	.nav-links a {
+	  color: white;
+	  text-decoration: none;
+	  padding: 0.5rem 1rem;
+	  border-radius: 10px;
+	  transition: background-color 0.3s;
+	  font-size: 18px;
+	  font-weight: bold;
+	  position: relative;
+	}
+
+	.nav-links a::before {
+		  content: '';
+		  position: absolute;
+		  top: -3px;
+		  left: -3px;
+		  right: -3px;
+		  bottom: -3px;
+		  background: linear-gradient(45deg, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.5),rgba(51, 51, 51, 0.2),transparent);
+		  z-index: -1;
+		  border-radius: 10px;
+		  opacity: 0;
+		  transition: opacity 0.3s;
+	}
+
+	.nav-links a:hover::before {
+		  opacity: 1;
+	}
+	/*.nav-links a:hover,*/
+	.nav-links a.active {
+	  background-color: var(--neutral-dark);
+	}
+
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	 h3 {
+		text-align:left;
+		margin-top:5px;
+		margin-bottom:5px;
+		margin-left:100px;
+		font-family:Times New Roman;
+		font-size:40px;
+		color:blue;
+	 }
+
+
+	 .box {
+		width:280px;
+		height:300px;
+		padding:10px;
+		margin:px;
+		margin-left:100px;
+		overflow:hidden; /* preventing the image from getting out of the box*/
+		display:flex;
+		align-items:flex-start;
+		position:relative;
+		margin-top:20px;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+		border-radius:30px;
+		text-align:left;
+		background-color:#3e2723;
+		border: 4px solid #b79a73; /* Darker beige or brown border */
+		
+		
+	
+	 }
+	
+	 img {
+		margin-top:100px;
+		border-radius:50%;
+	 }
+	 .container{
+		display:flex;
+		gap:10px;
+		border-radius:50%;
+		
+	 }
+	 .description {
+		width:500px;
+		height:500px;
+		padding:5px;
+		margin:100px;
+		margin-top:40 px;
+		margin-left:200px;
+		font-size:25;
+		text-align:justify;
+	 }
+		
+	 .front_image  {
+		width:200px:
+		height:200px
+		float:right;
+		margin-left:-20px;
+		margin-top:-55px;
+		object-fit:cover;
+		
+		
+	 }
+	 .content{
+		display:flex;
+		justify-content:flex-start;
+		align-items:stretch;
+		background-color:solid gray;
+		margin-top:10px;
+	 }
+	 hr {
+		margin-top:-230px;
+		width:900px;
+	 }
+	
+	
+	 .box img{
+		width:120px;
+		height:120px;
+		object-fit:cover;
+		margin-top:30px;
+		margin-left:80px;
+	 }
+	 .review{
+		width:90%;
+		height:500px;
+		padding:10px;
+		margin:40px;
+		margin-left:80px;
+		margin-top:50px;
+		display:flex;
+		gap:10px;
+		background-image:url("images/group.jpg");
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	 }
+	 .programmes {
+		width:350px;
+		height:290px;
+		padding:10px;
+		margin:40px;
+		margin-left:100px;
+		border:2px solid black;
+		overflow:hidden; /* preventing the image from getting out of the box*/
+		display:flex;
+		align-items:center;
+		position:relative;
+		margin-top:100px;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+		border-radius:30px;
+	 }
+	 .heading  {
+		margin-left:39 %;
+		margin-top:20px;
+		font-size:39px;
+		font-decoration:bold;
+		text-align:center;
+		
+			
+	 }
+	 .volunteering img{
+	 	text-align:left;
+		margin-left: 150px;
+		border-radius: 50%;
+		margin-top:10px;
+	 }
+	 .text{
+		text-align:justify;
+		margin-right:170px;
+		margin-top:40px;
+		font-size:35px;
+		margin-left:0;
+			
+	 }
+	 .volunteering{
+		display:flex;
+		justify-content:flex-start;
+		align-items:stretch;
+		gap:180px;
+	 }
+	 .paragraph {
+		text-align:left;
+		font-size:24px;
+		margin-top:20px;
+	 }
+	 form{
+		text-align:center;
+		font-size:20px;
+	 }
+	 label{
+		font-weight:bold;
+		display:block;
+		margin-bottom:5px;
+	 }
+	 textarea{
+		width:500px;
+		padding:10px;
+		border-radius:5px;
+		margin-top:5px;
+	 }
+	 .joining img{
+		border-radius:50%;
+		text-align:center;
+		width:200px;
+		height:200px;
+		margin-left:450px;
+		margin-top:10px;
+		
+	 }
+	 h4{
+		text-align:center;
+		margin-left:-100px;
+		font-size:28px;
+	 }
+	 
+	 .options{
+		width:280px;
+		height:290px;
+		padding:10px;
+		margin:60px;
+		margin-left:50px;
+		margin-top:10px;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+		border-radius:30px;
+		text-align:center;
+		background-color: #8a7f7d;     
+		
+	 }
+	 .row{
+		display:flex;
+		gap:10px;
+	 }
+	 video-container {
+      position: relative;
+      width: 100%;
+      height: 50vh; 
+      overflow: hidden;
+    }
+	 .introduction {
+		position: absolute;
+		top: 100px;    
+		left: 500px;   
+		transform: translate(-50%, -50%); /* Centers the text */
+		color: white;
+		font-size: 50px; 
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		text-align: left;
+		margin-top:200px;
+     
+     }
+	 .myVideo {
+		width: 100%; 
+		height: 400px; 
+		object-fit: cover;
+		margin-top:9px;
+	}
+	  
+	 /* ===== FOOTER ===== */
+	 .footer {
+		background-color: #1abf42;
+		color: var(--neutral-light);
+		padding: 3rem;
+		text-align: center;
+		margin-top: auto;
+
+	 }
+
+	 .footer-links {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+		margin-bottom: 5px;
+		font-size: 1.2rem;
+		transition: 0.5s;
+		opacity: 0.75;
+		font-weight: 300;
+	 }
+
+	 .footer-links a {
+		color: var(--neutral-light); /* This sets the link color to white */	
+		text-decoration: none;
+		transition: 0.3s;
+	 }
+
+	 .footer-links a:hover {
+		opacity: 1;
+		font-weight: bold;
+		color: var(--neutral-light);
+	 }
+
+
+	 .footer-line {
+		width: 100%;
+		height: 2px;
+		background-color: var(--neutral-dark);
+		margin-bottom: 30px;
+	 }
+
+	 /* ===== GO-TO-TOP BUTTON ===== */
+	 #go-to-top {
+		position: fixed;
+		bottom: 20px;  /* Distance from bottom */
+		right: 20px;   /* Distance from right */
+		padding: 10px 15px;
+		font-size: 16px;
+		background-color:  rgba(0, 0, 0, 0.6);
+		color: white;
+		border: none;
+		border-radius: 40px;
+		cursor: pointer;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	 }
+	 .box p{
+		text-align:center;
+		margin-top:170px;
+		margin-left:-185px;
+	 }
+	 .events{
+		width:500px;
+		height:450px;
+		padding:10px;
+		margin:80px;
+		margin-left:30px;
+		margin-top:80px;
+		overflow:hidden; /* preventing the image from getting out of the box*/
+		display:flex;
+		align-items:flex-start;
+		position:relative;
+		margin-top:20px;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+		border-radius:80px;
+		text-align:left;
+		background-color:#3e2723;
+		border: 4px solid #b79a73; /* Darker beige or brown border */
+		opacity: 0.8;
+	 }
+	 .apply-button {
+		background-color: #4CAF50; /* Green background */
+		color: white; /* White text */
+		border: 2px solid white;
+		padding: 15px 32px;
+		text-align: center; 
+		text-decoration: bold; 
+		display: inline-block; 
+		cursor: pointer; 
+		border-radius: 5px; 
+		margin-top: 20px;
+		font-size:15px;
+		margin-left:160px;
+	 }
+		
+	 .apply-button:hover {
+		background-color: #45a049; /* Darker green when hovering */
+	 }
+	 h2{
+		text-align:center;
+	 }
+	 .pecentage{
+		width:1200px;
+		height:600px;
+		padding:10px;
+		margin:80px;
+		margin-left:70px;
+		margin-top:90px;
+		overflow:hidden; /* preventing the image from getting out of the box*/
+		display:flex;
+		align-items:flex-start;
+		position:relative;
+		margin-top:20px;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+		border-radius:80px;
+		text-align:left;
+		background-color:#2ECC71;
+		border: 4px solid #b79a73; /* Darker beige or brown border */
+		opacity: 0.8;
+     }
+	 
+	 .rate{
+		text-align:left;
+		font-size:60px;
+		margin-top:40px;
+		margin-left:50px;
+	 }
+	 .categories {
+		text-align:left;
+		margin-top:250px;
+		margin-left:-370px;
+		font-size:20px;
+	 }
+	 span{
+		margin-right:30px;
+	 }
+	 .comments{
+		width:400px;
+		height:200px;
+		padding:10px;
+		margin-left:-500px;
+		margin-top:300px;
+		overflow:hidden; /* preventing the image from getting out of the box*/
+		display:flex;
+		align-items:flex-start;
+		position:relative;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+		border-radius:5px;
+		text-align:left;
+		background-color:#3e2723;
+		border: 4px solid white;
+		opacity: 0.8;
+     }
+	 .name{
+		margin-top:10px;
+		
+	 }
+	 .comments_2{
+		width:400px;
+		height:200px;
+		padding:10px;
+		margin-left:100px;
+		margin-top:300px;
+		overflow:hidden; /* preventing the image from getting out of the box*/
+		display:flex;
+		align-items:flex-start;
+		position:relative;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+		border-radius:5px;
+		text-align:left;
+		background-color:#3e2723;
+		border: 4px solid blue; /* Darker beige or brown border */
+		opacity: 0.8;
+	 }
+	 .enrolment{
+		width:1200px;
+		height:600px;
+		padding:10px;
+		margin:80px;
+		margin-left:30px;
+		margin-top:90px;
+		overflow:hidden; /* preventing the image from getting out of the box*/
+		display:flex;
+		align-items:flex-start;
+		position:relative;
+		margin-top:20px;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+		border-radius:80px;
+		text-align:left;
+		background-image:url("images/forest.jpg");
+		border: 4px solid #b79a73; /* Darker beige or brown border */
+		opacity: 0.8;
+     }
+		
+	 
+	
+	
+		
+			
+
+		
+	
+	</style>
+</head>
+<body>
+	<!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+		    <div class="brand">
+            <img src="../images/white-SDG15logo.jpg" alt="SDG 15 Logo" class="logo">
+			<span>LIFE <br> ON LAND</span>
+			</div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home ≫</a></li>
+                <li><a href="volunteer-testing.html">Volunteer ≫</a></li>
+                <li><a href="table.html">Data ≫</a></li>
+                <li><a href="feedback.html">Feedback ≫</a></li>
+				<li><a href="page_editor imasha">Profile ≫</a></li>
+				<li><a href="sitemap.html">Sitemap ≫</a></li>
+				<li><a href="team.html">Team ≫</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+	<div class="introduction">
+		 "Ready to make a difference.Come join with us!.."
+	</div>
+	<!-- Video with the .myVideo class applied -->
+	<div class=".video-container">
+	<video autoplay muted loop class="myVideo">
+		<source src="images/small-forest.mp4" type="video/mp4">
+	</video>
+	</div>
+	
+	
+	
+	<div class="content">
+		<div class ="description">
+			<p>Our Mission is to protect and restore Earth's ecosystems through collective action. We focus on preserving wildlife, restoring habitats, and combating climate change. 
+			    Join us in creating a lasting impact for a healthier, greener future..</p>
+		</div>
+		<div class="front_image">
+			<img src="images/photo.jpg" alt="photo" width="340px" height="350px">
+		 
+		</div>
+	</div><hr>
+	
+	
+	<div class="container">
+		<div class="box">
+			<img src="images/education.jpg" alt="nature">
+				<p>Spread awareness and educate local communities about sustainability, conservation, and the importance of protecting the environment.</p>
+		</div>
+		<div class ="box">
+			<img src="images/cleaning.jpg" alt="nature">
+				<p>Join our efforts to clean local beaches, parks, and nature trails to reduce pollution and protect natural spaces.</p>
+		</div>
+		<div class="box">
+			<img src="images/helping in planting.jpg" alt="nature">
+				<p>Help restore forests and combat climate change by planting native trees in local communities..</p>
+		</div>
+	</div>
+	
+	
+	<div class="heading">
+			Our programmes
+	</div>
+	<div class="review">
+		<div class="events">
+			<section>
+				<h2>"Roots for the future"</h2>
+				<b>Restore damaged forests and fight climate change by planting native trees.</b>
+				<ul>
+					<li>Activities:</li>
+						<li><b>🌳 Tree Planting</b></li>
+						<li><b>🌾 Invasive Species Removal</b></li>
+						<li><b>🛠️ Forest Maintenance</b></li>
+				</ul>
+				<b>🕰️ Duration : ⏳ 1–3 hours per session</b><br>
+				<b>🎯 Volunteer Age  :👦👧 Ages 16 and up</b><br>
+				<b>🌱 Meetups & Events: join our monthly volunteer sessions</b><br>
+				<b>📝 Sign Up: Join our next tree-planting event</b><br>
+				<button class="apply-button">JOIN US</button>
+		</div>
+		<div class="events">
+			<section>
+				<h2>"Clean Streets, Clean Minds"</h2>
+				<b>Restore damaged forests and fight climate change by planting native trees.</b>
+				<ul>
+					<li>Activities:</li>
+						<li><b>🌿 Green Space Cleanups</b></li>
+						<li><b>🚮 Trash Pickup in Parks</b></li>
+						<li><b>🛣️ Public Space Refurbishment</b></li>
+				</ul>
+				<b>🕰️ Duration : ⏳ 2 weeks a month</b><br>
+				<b>🎯 Volunteer Age  :👦👧 Ages18 and up</b><br>
+				<b>🌱 Meetups & Events: join our monthly volunteer sessions</b><br>
+				<b>💰 Fees: No fees required for participation!</b><br>
+				<button class="apply-button">JOIN US</button>
+			</section>
+		</div>
+		
+	</div>
+
+    
+	<div class="pecentage">
+		<div class="rate">
+			⭐ Reviews:<br>
+			9.4%
+			</div>
+		<div class="categories">
+			<span>Organization: 4.7/5</span>    
+			<span>💬 Community Engagement: 4.6/5</span>
+		</div>
+		<div class="comments">
+			<section>
+			<p>A truly rewarding experience! Volunteering with nature projects like tree planting and clean-ups 
+			makes a real difference. It’s great to see the community coming together to protect our environment!"<br>
+			
+			<div class="name"><b>Mr.Ajith Kumara</b><br>
+			<b>Mar 16 2024</b></p></div>
+			</section>
+			
+			
+		</div>
+	</div>
+	<form>
+		<label for="content">Share your Thoughts</label><br>
+		<textarea id ="content" name="content" rows="6" cols="20">
+		</textarea><br>
+		<input type="Submit" name="send" value="Send post">
+			
+	</form>
+	<div class="enrolment">
+		<div class="joining">
+			
+			<h4>Do you want to join us!...</h4>
+			<div class="row">
+				<div class="options">
+				<h2>Commitement and Availability</h2>
+				<p>Must be able to commit themselves to their work and participation is required</p>
+				</div>
+				<div class="options">
+					<h2>Cost & Fundraising 💵🌍</h2>
+					<p>Some programs may require volunteers to cover their own travel, accommodation</p>
+				</div>
+				<div class="options">
+					<h2>Interest in Nature and Conservation 🌿❤️</h2>
+					<p>A genuine passion for nature conservation, wildlife protection, and environmental sustainability.</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	 <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+		    <a href="home.html" target="_blank">Home</a>
+            <a href="volunteer-testing.html" target="_blank">Volunteer</a>
+            <a href="table.html" target="_blank">Data</a>
+            <a href="feedback.html" target="_blank">Feedback</a>
+            <a href="team.html" target="_blank">Team</a>
+	        <a href="page_editor imasha" target="_blank">Profile</a>
+		    <a href="sitemap.html" target="_blank">Sitemap</a>
+            <a href="pageEditor_ST2.html" target="_blank">Editor Page</a>
+        </div>
+		<div class="footer-line"></div>
+        <p>&copy; 2025 LIFE ON LAND SDG 15 | All rights reserved.</p>
+    </footer>
+
+    <!-- Go to Top Button -->
+    <a href="#" id="go-to-top" >▲</a>
+		
+	
+		
+		
+		
+
+	
+		
+	
+</body>
+</html>
+	
+		

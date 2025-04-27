@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Combact Desertification</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="ST6.css">
+        <link rel="shortcut icon" href="images/SDG15logo.png"
+            type="image/png">
+            <link rel="stylesheet" href="../footer_navbar.css">
+        <script>
+            /* JavaScript functionality for go-to-top button */
+document.addEventListener('DOMContentLoaded', function() {
+  const goTopBtn = document.getElementById('go-to-top');
+  
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      goTopBtn.classList.add('visible');
+    } else {
+      goTopBtn.classList.remove('visible');
+    }
+  });
+  
+  // Add animation to sections when they come into view
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-content');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.1,
+    rootMargin: '0px'
+  });
+  
+  document.querySelectorAll('.transparent-box, .how-to-help, .efforts, .importance').forEach(section => {
+    observer.observe(section);
+  });
+});
+        </script>
+    </head>
+    <body>
+        <!-- Header with Navigation -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="brand">
+                    <img src="../images/white-SDG15logo.jpg" alt="SDG 15 Logo"
+                        class="logo">
+                    <span>LIFE <br> ON LAND</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home ≫</a></li>
+                    <li><a href="volunteer-testing.html">Volunteer ≫</a></li>
+                    <li><a href="table.html">Data ≫</a></li>
+                    <li><a href="../feedback/feedback.html">Feedback ≫</a></li>
+                    <li><a href="page_editor imasha.html">Profile ≫</a></li>
+                    <li><a href="sitemap.html">Sitemap ≫</a></li>
+                    <li><a href="team.html">Team ≫</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="wrapper-content">
+            <div class="content">
+                <h1>Biodiversity</h1>
+                <div class="sub-topics">
+                    <nav class="side-nav">
+                        <ul>
+                            <li><a href="#box1">Ecosystem Functioning and Stability</a></li>
+                            <li><a href="#box2">Threats to Biodiversity</a></li>
+                            <li><a href="#box3">How to Protect Biodiversity</a></li>
+                            <li><a href="#box4">Support or Initiate Biodiversity Research</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="efforts">
+                <h1>Ecosystem Functioning and Stability</h1>
+                <p class="description">
+                   ."Biodiversity supports ecosystems by providing food, water, climate regulation, and disease prevention. 
+					It aids human health through medicine and helps mitigate climate change. Genetic diversity ensures agricultural 
+					resilience, while biodiversity drives economic industries like farming and tourism. It also holds cultural value 
+					and is essential for a sustainable future, with its loss impacting ecosystems and human well-being.."
+                </p>
+            </div>
+
+            <!-- Section: Importance of Wildlife Conservation -->
+            <section class="importance" style="text-align: left; padding:20px;">
+                <h2>Threats to Biodiversity</h2>
+                <p class="description">
+					 "Biodiversity is threatened by habitat destruction, climate change, pollution, overexploitation, and invasive species. 
+					Human activities like deforestation, urbanization, and agriculture destroy ecosystems, while climate change alters habitats and 
+					species survival. Pollution harms ecosystems, and overfishing and hunting deplete resources. Invasive species disrupt natural balances, 
+					accelerating biodiversity loss and weakening ecosystems, which affects both nature and human well-being"
+                    
+                </p>
+                
+            </section>
+
+            <!-- Section: Key Initiatives -->
+            <section class="initiatives">
+                <h2>How to Protect Biodiversity</h2>
+                <div class="transparent-box" id="box1">
+                    
+                   
+                        <hr>
+                        <h3>
+                            "To protect biodiversity, we should preserve habitats through protected areas, reduce pollution, and combat climate change by cutting emissions. We must conserve species by managing resources 
+					sustainably, control invasive species, and restore native ones. Raising awareness and supporting conservation efforts are key to ensuring biodiversity protection."
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="transparent-box" id="box2">
+                    <div class="text-box">
+                        <h1>Reforestation and Afforestation</h1>
+                        <hr>
+                        <h3>
+                            "Supporting biodiversity research is crucial for understanding ecosystems and species interactions. By funding studies and collaborating with institutions, we gather data on 
+					species populations, habitat conditions, and threats like climate change and invasive species. This research helps develop effective conservation strategies and informs sustainable practices. 
+					Investing in citizen science and innovative monitoring technologies further strengthens efforts to protect biodiversity, leading to better-informed policies for long-term sustainability."
+                        </h3>
+                    </div>
+                    <img
+                        src="images/forest.jpg"
+                        alt="box2" class="img-box">
+                </div>
+
+                
+            </section>
+
+            <!-- Section: How You Can Help -->
+            <section class="how-to-help">
+                <h1>How You Can Help</h1>
+                <p>
+                    You can contribute to wildlife conservation by supporting
+                    local and global initiatives, volunteering your time,
+                    or simply spreading awareness about the importance of
+                    protecting our planet's biodiversity.
+                </p>
+                <a href="volunteer.html" class="btn">Get Involved</a>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="home.html" target="_blank">Home</a>
+                <a href="volunteer-testing.html" target="_blank">Volunteer</a>
+                <a href="table.html" target="_blank">Data</a>
+                <a href="feedback.html" target="_blank">Feedback</a>
+                <a href="team.html" target="_blank">Team</a>
+                <a href="profile.html" target="_blank">Profile</a>
+                <a href="sitemap.html" target="_blank">Sitemap</a>
+                <a href="page_editor imasha.html.html" target="_blank">Editor Page</a>
+            </div>
+            <div class="footer-line"></div>
+            <p>&copy; 2025 LIFE ON LAND SDG 15 | All rights reserved.</p>
+        </footer>
+
+        <!-- Go to Top Button -->
+        <a href="#" id="go-to-top">▲</a>
+    </body>
+</html>
