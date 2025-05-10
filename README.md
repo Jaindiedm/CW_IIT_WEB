@@ -50,6 +50,9 @@ This coursework aimed to:
 ---
 
 ## 🌳 SDG Goal 15: Life on Land Focus
+<p align="center">
+  <img src="snaps/E-WEB-Goal-15.png" alt="Description" width="200">
+</p>
 
 This website advocates for **Life on Land (SDG 15)**, promoting awareness about:
 - Protecting and restoring terrestrial ecosystems.
