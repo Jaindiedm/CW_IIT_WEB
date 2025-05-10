@@ -1,7 +1,7 @@
 # 🌿 Life on Land — UN SDG Goal 15 | Group Coursework Website
-| ![Image 1](images/image1.jpg) | ![Image 2](images/image2.jpg) |
+| ![Image 1](snaps/home.png) | ![Image 2](snaps/profile.png) |
 |:----------------------------:|:----------------------------|
-| ![Image 3](images/image3.jpg) | ![Image 4](images/image4.jpg) |
+| ![Image 3](snaps/home2.png) | ![Image 4](snaps/content.png) |
 
 
 This is a group coursework project developed for the *Web Design and Development* module (4COSC011W) at the **University of Westminster**. The website highlights **United Nations Sustainable Development Goal (SDG) 15: Life on Land**, focusing on protecting, restoring, and promoting sustainable use of terrestrial ecosystems.
